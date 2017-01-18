@@ -1,0 +1,28 @@
+[user]
+  name = techgaun
+  email = coolsamar207@gmail.com
+  signingkey = 221F7B30
+
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+
+[alias]
+  c = clone --recursive --depth 50
+  l = log --decorate --pretty=oneline -n 20 --graph --abbrev-commit
+  mc = clone --branch=master --depth 50
+  s = status -s
+
+[commit]
+  gpgsign = true
+
+[diff "bin"]
+  textconv = hexdump -v -C
+
+[log]
+  abbrevCommit = true
+  decorate = true
+  follow = true
+
+[pull]
+  rebase = true

@@ -1,0 +1,8 @@
+*.pyc
+*.beam
+.DS_Store
+Desktop.ini
+Thumbs.db
+.Trashes
+*.sw?
+.tool-versions
