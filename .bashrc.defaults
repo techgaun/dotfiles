@@ -25,3 +25,5 @@ export PATH="${HOME}/bin:${HOME}/.asdf/installs/elixir/1.4.0/.mix/escripts:${PAT
 export EDITOR="vim"
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+
+source "${HOME}/.bash_prompt"
