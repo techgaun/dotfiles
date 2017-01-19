@@ -1,0 +1,24 @@
+# hitory stuff
+HISTCONTROL=ignoreboth
+shopt -s histappend
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# shopt
+shopt -s checkwinsize
+shopt -s nocaseglob
+shopt -s cdspell
+shopt -s autocd
+shopt -s globstar
+
+# git is aliased to g so need to setup completion
+
+git_compl="/usr/share/bash-completion/completions/git"
+if [[ -f "${git_compl}" ]]; then
+  source "${git_compl}"
+  __git_complete g __git_main
+fi
+
+# paths
+
+export PATH="${HOME}/bin:${HOME}/.asdf/installs/elixir/1.4.0/.mix/escripts:${PATH}"

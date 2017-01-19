@@ -14,3 +14,8 @@ ln -sf "${SRC_DIR}/.tmux.conf" "${HOME}/.tmux.conf"
 ln -sf "${SRC_DIR}/.bash_aliases" "${HOME}/.bash_aliases"
 ln -sf "${SRC_DIR}/.vimrc.local" "${HOME}/.vimrc.local"
 ln -sf "${SRC_DIR}/.vimrc.bundles.local" "${HOME}/.vimrc.bundles.local"
+ln -sf "${SRC_DIR}/.bashrc.defaults" "${HOME}/.bashrc.defaults"
+
+if ! grep ".bashrc.defaults" ~/.bashrc > /dev/null; then
+  echo "source ~/.bashrc.defaults" >> ~/.bashrc
+fi
