@@ -1,8 +1,8 @@
 # hitory stuff
 HISTCONTROL=ignoreboth
 shopt -s histappend
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=4000
+HISTFILESIZE=8000
 
 # shopt
 shopt -s checkwinsize
@@ -19,6 +19,9 @@ if [[ -f "${git_compl}" ]]; then
   __git_complete g __git_main
 fi
 
-# paths
+# paths and other exports
 
 export PATH="${HOME}/bin:${HOME}/.asdf/installs/elixir/1.4.0/.mix/escripts:${PATH}"
+export EDITOR="vim"
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
