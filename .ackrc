@@ -1,0 +1,4 @@
+--smart-case
+--color
+--ignore-dir=_build
+--type-add=css:ext:scss
