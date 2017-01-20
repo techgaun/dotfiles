@@ -1,7 +1,7 @@
 {
   "__meta__": {
     "about": "techgaun's HTTPie configuration file",
-    "help": "https://github.com/jkbrzt/httpie#config",
+    "help": "https://httpie.org/docs#config",
     "httpie": "0.9.9"
   },
   "default_options": [
@@ -11,6 +11,5 @@
     "--follow",
     "--timeout=60",
     "--max-redirects=15"
-  ],
-  "implicit_content_type": "json"
+  ]
 }
