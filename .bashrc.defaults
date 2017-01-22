@@ -28,5 +28,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
 export PYTHONIOENCODING='UTF-8'
+export NODE_REPL_HISTORY_SIZE=5000
 
 source "${HOME}/.bash_prompt"
