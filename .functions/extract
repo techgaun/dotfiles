@@ -1,0 +1,20 @@
+extract() {
+  if [ "${1}x" == "x" ]; then
+    echo "Usage: extract <filepath>"
+  else
+    if [ -f "${1}" ]; then
+      case "${1}" in
+        *.tgz | *.tar.gz)   tar xfz "${1}";;
+        *.tbz2 | *.tar.bz2) tar xfj "${1}";;
+        *.tar | *.lzma | *.txz | *.tar.xz) tar xf "${1}";;
+        *.rar)              unrar x -ad "${1}";;
+        *.zip | *.ZIP)              unzip "${1}";;
+        *.gz)               gunzip "${1}";;
+        *.Z)                uncompress "${1}";;
+        *)                  echo "Unknown compressed file type.";;
+      esac
+    else
+      echo "${1} does not exist or is not a file."
+    fi
+  fi
+}

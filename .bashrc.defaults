@@ -33,3 +33,7 @@ export GOPATH="${HOME}/projects/go"
 export PATH="${GOPATH}/bin:${PATH}"
 
 source "${HOME}/.bash_prompt"
+
+for f in "${HOME}/.functions/*"; do
+  source $f
+done
