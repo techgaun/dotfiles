@@ -49,6 +49,8 @@ alias mdkir="mkdir"
 alias hl="heroku login --sso"
 alias hpsql="heroku psql --app"
 alias hbash="heroku run bash --app"
+alias hmaint="heroku maintenance:on --app"
+alias hzero="heroku ps:scale web=0 --app"
 
 # elixir/mix
 alias mn="mix new"
