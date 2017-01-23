@@ -18,6 +18,7 @@ This dotfiles repo is what I use to setup my systems.
 - global gitignore and my git configuration
 - global editorconfig
 - httpie configuration
+- my [bash functions](.functions)
 
 ## Reinstall vim
 
