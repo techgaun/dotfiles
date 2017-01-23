@@ -59,6 +59,11 @@ alias mch="mix coveralls.html"
 alias mtw="mix test --only wip"
 alias mrh="mix run --no-halt"
 
+# go stuff
+alias godoch="godoc -http=:4000"
+alias gb="go build -x"
+alias gr="go run -x"
+
 if [[ -f "${HOME}/.bash_aliases_secret" ]]; then
   source ${HOME}/.bash_aliases_secret
 fi
