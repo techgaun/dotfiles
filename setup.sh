@@ -10,7 +10,7 @@ fi
 
 [[ ! -e "${HOME}/.httpie" ]] && mkdir "${HOME}/.httpie"
 
-ln -sf "${SRC_DIR}/.functions" "${HOME}/.functions"
+[[ -L "${HOME}/.functions" ]] || ln -sf "${SRC_DIR}/.functions" "${HOME}/.functions"
 
 ln -sf "${SRC_DIR}/.ackrc" "${HOME}/.ackrc"
 ln -sf "${SRC_DIR}/.bash_aliases" "${HOME}/.bash_aliases"
