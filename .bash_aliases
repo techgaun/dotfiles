@@ -66,6 +66,8 @@ alias mrh="mix run --no-halt"
 alias godoch="godoc -http=:4000"
 alias gb="go build -x"
 alias gr="go run -x"
+alias get="go get"
+alias getu="go get -u"
 
 if [[ -f "${HOME}/.bash_aliases_secret" ]]; then
   source ${HOME}/.bash_aliases_secret
