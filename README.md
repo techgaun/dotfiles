@@ -28,3 +28,7 @@ this will enforce installation of vim stuff while running `setup.sh` even if vim
 ```shell
 FORCE_VIMINSTALL=yup ./setup.sh
 ```
+
+## Notes
+
+- For `git diff`, I'm using [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) so make sure you have if you use this .gitconfig
