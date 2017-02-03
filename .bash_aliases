@@ -53,6 +53,7 @@ alias hbash="heroku run bash --app"
 alias hmaint="heroku maintenance:on --app"
 alias hmaintoff="heroku maintenance:off --app"
 alias hzero="heroku ps:scale web=0 --app"
+alias hpurge="heroku repo:purge_cache --app"
 
 # elixir/mix
 alias mn="mix new"
