@@ -1,4 +1,7 @@
 --smart-case
 --color
 --ignore-dir=_build
+--ignore-dir=dist
+--ignore-dir=bower_components
+--ignore-dir=node_modules
 --type-add=css:ext:scss
