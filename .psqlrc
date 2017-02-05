@@ -1,0 +1,16 @@
+-- feel better on psql
+
+\set QUIET 1
+\pset null '[NULL]'
+
+\set PROMPT1 '%[%033[1m%]%M %n@%/%R%[%033[0m%]%# '
+\set PROMPT2 '[more] %R > '
+
+\timing on
+
+\x auto
+\set VERBOSITY verbose
+\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTCONTROL ignoredups
+\set COMP_KEYWORD_CASE upper
+\unset QUIET
