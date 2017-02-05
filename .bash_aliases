@@ -17,7 +17,7 @@ alias h="history"
 alias j="jobs"
 alias myip="curl ipinfo.io"
 alias runinflux="sudo influxd -config /etc/influxdb/influxdb.conf"
-alias ppsql="sudo -u postgres psql"
+alias ppsql="psql -U postgres -W"
 
 # node/npm
 alias ni="npm install"
