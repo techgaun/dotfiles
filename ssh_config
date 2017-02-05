@@ -1,0 +1,10 @@
+# for ssh tunnelling, use -o ControlMaster=no
+ControlMaster auto
+ControlPath /tmp/ssh_mux_%h_%p_%r
+ControlPersist 10m
+TCPKeepAlive no
+ServerAliveInterval 60
+ServerAliveCountMax 10
+
+# anything prviate put on ~/.ssh/config.local
+Include ~/.ssh/config.local

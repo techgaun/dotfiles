@@ -1,4 +1,5 @@
 *.pyc
+*.pyo
 *.beam
 .DS_Store
 Desktop.ini
@@ -6,3 +7,8 @@ Thumbs.db
 .Trashes
 *.sw?
 .tool-versions
+.sass-cache
+npm-debug.log
+*.bak
+*.o
+*.so
