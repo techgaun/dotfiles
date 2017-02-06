@@ -18,6 +18,7 @@ alias j="jobs"
 alias myip="curl ipinfo.io"
 alias runinflux="sudo influxd -config /etc/influxdb/influxdb.conf"
 alias ppsql="psql -U postgres -W"
+alias apingrok="ngrok http 4001"
 
 # node/npm
 alias ni="npm install"
