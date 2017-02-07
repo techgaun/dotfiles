@@ -10,6 +10,7 @@
 
 [alias]
   c = clone --recursive --depth 50
+  cp = !git checkout -
   l = log --decorate --pretty=oneline -n 20 --graph --abbrev-commit
   mc = clone --branch=master --depth 50
   s = status -s
