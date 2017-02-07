@@ -19,6 +19,7 @@ alias myip="curl ipinfo.io"
 alias runinflux="sudo influxd -config /etc/influxdb/influxdb.conf"
 alias ppsql="psql -U postgres -W"
 alias apingrok="ngrok http 4001"
+alias mirror="wget --mirror --page-requisites --adjust-extension --no-parent --convert-links"
 
 # node/npm
 alias ni="npm install"
