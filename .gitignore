@@ -8,7 +8,7 @@ Thumbs.db
 *.sw?
 .tool-versions
 .sass-cache
-npm-debug.log
+npm-debug.log*
 *.bak
 *.o
 *.so
