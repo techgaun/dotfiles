@@ -20,6 +20,8 @@ map <Up> :echo "Nope!"<cr>
 map <Down> :echo "Nope!"<cr>
 
 iabbrev adn and
+iabbrev THis This
+iabbrev THe The
 iabbrev @@ samar+oss@techgaun.com
 iabbrev ccopy Copyright 2017 techgaun, all rights reserved.
 iabbrev mysite http://www.techgaun.com
