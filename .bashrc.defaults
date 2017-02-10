@@ -31,6 +31,7 @@ export PYTHONIOENCODING='UTF-8'
 export NODE_REPL_HISTORY_SIZE=5000
 export GOPATH="${HOME}/projects/go"
 export PATH="${GOPATH}/bin:${PATH}"
+export SAANCHO_CLIPBOARD="true"
 
 source "${HOME}/.bash_prompt"
 
