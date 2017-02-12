@@ -1,4 +1,9 @@
 inoremap jk <ESC>
+autocmd FileType elixir setlocal omnifunc=elixircomplete#Complete
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
+endif
+let g:neocomplete#sources#omni#input_patterns.elixir = '[^.[:digit:] *\t]\.'
 let g:alchemist#elixir_erlang_src = "/home/techgaun/.asdf/installs/elixir"
 let g:gutentags_cache_dir = '~/.tags_cache'
 autocmd! BufWritePost * Neomake
