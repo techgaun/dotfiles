@@ -1,5 +1,5 @@
 inoremap jk <ESC>
-let g:alchemist#elixir_erlang_src = "/home/techgaun/.asdf/installs/elixir/1.3.4"
+let g:alchemist#elixir_erlang_src = "/home/techgaun/.asdf/installs/elixir"
 let g:gutentags_cache_dir = '~/.tags_cache'
 autocmd! BufWritePost * Neomake
 let g:neomake_elixir_enabled_makers = ['mix', 'mycredo']
