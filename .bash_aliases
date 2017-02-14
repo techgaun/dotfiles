@@ -21,6 +21,7 @@ alias ppsql="PGPASSWORD=postgres psql -U postgres -W"
 alias apingrok="ngrok http 4001"
 alias mirror="wget --mirror --page-requisites --adjust-extension --no-parent --convert-links"
 alias script="script -aq"
+alias brc="source ~/.bashrc"
 
 # node/npm
 alias ni="npm install"
