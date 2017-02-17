@@ -5,4 +5,6 @@
 --ignore-dir=bower_components
 --ignore-dir=node_modules
 --ignore-dir=deps
+--ignore-dir=cover
+--ignore-dir=apidoc
 --type-add=css:ext:scss
