@@ -1,0 +1,3 @@
+benchmark: false
+backtrace: true
+gem: --no-rdoc --no-ri --no-document --suggestions
