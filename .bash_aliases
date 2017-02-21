@@ -79,6 +79,8 @@ alias getu="go get -u"
 
 # react/react-native stuff
 alias rn="react-native"
+alias rnand="react-native run-android"
+alias rnios="react-native run-ios"
 
 if [[ -f "${HOME}/.bash_aliases_secret" ]]; then
   source ${HOME}/.bash_aliases_secret
