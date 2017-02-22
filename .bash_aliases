@@ -69,6 +69,7 @@ alias mer="mix ecto.reset"
 alias mch="mix coveralls.html"
 alias mtw="mix test --only wip"
 alias mrh="mix run --no-halt"
+alias mpr="mix phoenix.routes"
 
 # go stuff
 alias godoch="godoc -http=:4000"
