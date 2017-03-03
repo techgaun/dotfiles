@@ -4,8 +4,8 @@ SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # setup spf13-vim if not installed already or FORCE_VIMINSTALL is set
 if [[ ! -d "${HOME}/.spf13-vim-3" || "x${FORCE_VIMINSTALL}" != "x" ]]; then
-  REPO_URI="https://github.com/techgaun/spf13-vim.git" \
-    curl -L -o - https://github.com/techgaun/spf13-vim/raw/3.0/bootstrap.sh | sh
+  curl -L -o - https://github.com/techgaun/spf13-vim/raw/3.0/bootstrap.sh | \
+    REPO_URI="https://github.com/techgaun/spf13-vim.git" sh
 fi
 
 [[ ! -e "${HOME}/.httpie" ]] && mkdir "${HOME}/.httpie"
