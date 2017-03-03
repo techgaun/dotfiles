@@ -22,7 +22,7 @@ fi
 # paths and other exports
 
 export ANDROID_HOME="${HOME}/Android/Sdk"
-export PATH="${HOME}/.bin:${HOME}/.asdf/installs/elixir/1.4.0/.mix/escripts:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}"
+export PATH="${HOME}/.bin:${HOME}/.asdf/installs/elixir/1.4.0/.mix/escripts:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}:${HOME}/tools/buck/bin"
 export EDITOR="vim"
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
