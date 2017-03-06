@@ -23,3 +23,8 @@ IEx.configure(
   inspect: [pretty: true, char_lists: :as_lists],
   history_size: -1
 )
+
+secret = Path.join([System.cwd(), ".secret.exs"])
+if File.exists?(secret) do
+  Code.load_file(secret)
+end
