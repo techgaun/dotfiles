@@ -1,15 +1,16 @@
-sudo: required
-
 language: bash
 
-services:
-  - docker
+sudo: false
 
-before_install:
-  - docker pull koalaman/shellcheck
+addons:
+  apt:
+    sources:
+      - debian-sid
+    packages:
+      - shellcheck
 
 script:
-  - docker run -v $(pwd):/scripts koalaman/shellcheck /scripts/**/*.sh /scripts/.functions/*
+  - bash -c 'shopt -s globstar; shellcheck -s bash **/*.sh .functions/*'
 
 matrix:
   fast_finish: true
