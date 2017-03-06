@@ -13,5 +13,5 @@ npm-debug.log*
 *.o
 *.so
 
-# secret.exs is where I put my secret stuff for elixir projects
+# .secret.exs is where I put my secret stuff for elixir projects
 .secret.exs
