@@ -4,7 +4,7 @@ gitpwn() {
   if wget -qO- "${1}" &> /dev/null; then
     echo "Found open .git dir.. performing gitpwnage"
     wget -q --mirror --include-directories=/.git "${1}"
-    domain=$(awk -F/ '{print $3}' <<< $1)
+    domain=$(awk -F/ '{print $3}' <<< "$1")
     pushd "${domain}"
     git reset --hard
     popd

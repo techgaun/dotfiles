@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles [![Build Status](https://travis-ci.org/techgaun/dotfiles.svg?branch=master)](https://travis-ci.org/techgaun/dotfiles)
 
 > My dotfiles revamped
 
