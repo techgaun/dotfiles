@@ -1,0 +1,15 @@
+interface: lo
+
+dns-resolution: no
+
+port-resolution: no
+
+show-bars: no
+
+port-display: on
+
+use-bytes: yes
+
+line-display: one-line-both
+
+show-totals: yes
