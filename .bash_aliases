@@ -45,6 +45,7 @@ alias nlsg="npm list --global"
 
 # yarn aliases
 alias ya="yarn add"
+alias yad="yarn add --dev"
 alias yi="yarn init"
 alias ys="yarn start"
 alias yr="yarn remove"
