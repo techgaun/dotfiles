@@ -43,6 +43,12 @@ alias nr="npm run"
 alias nls="npm list"
 alias nlsg="npm list --global"
 
+# yarn aliases
+alias ya="yarn add"
+alias yi="yarn init"
+alias ys="yarn start"
+alias yr="yarn remove"
+
 # git
 alias g="git"
 alias gcm="git checkout master"
