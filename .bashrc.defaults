@@ -33,6 +33,7 @@ export NODE_REPL_HISTORY_SIZE=5000
 export GOPATH="${HOME}/projects/go"
 export PATH="${GOPATH}/bin:${PATH}"
 export SAANCHO_CLIPBOARD="true"
+export MINICOM="-m -c on"
 
 source "${HOME}/.bash_prompt"
 
