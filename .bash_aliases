@@ -95,3 +95,6 @@ alias rnios="react-native run-ios"
 if [[ -f "${HOME}/.bash_aliases_secret" ]]; then
   source ${HOME}/.bash_aliases_secret
 fi
+
+ag=$(command -v ag)
+[[ "$?" -eq 0 ]] && alias ag="ag --path-to-ignore ~/.agignore"

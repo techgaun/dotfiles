@@ -13,6 +13,7 @@ fi
 [[ -L "${HOME}/.functions" ]] || ln -sf "${SRC_DIR}/.functions" "${HOME}/.functions"
 
 ln -sf "${SRC_DIR}/.ackrc" "${HOME}/.ackrc"
+ln -sf "${SRC_DIR}/.agignore" "${HOME}/.agignore"
 ln -sf "${SRC_DIR}/.bash_aliases" "${HOME}/.bash_aliases"
 ln -sf "${SRC_DIR}/.bash_prompt" "${HOME}/.bash_prompt"
 ln -sf "${SRC_DIR}/.bashrc.defaults" "${HOME}/.bashrc.defaults"
