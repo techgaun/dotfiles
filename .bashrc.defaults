@@ -28,12 +28,17 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
+export PYTHONDONTWRITEBYTECODE=1
 export PYTHONIOENCODING='UTF-8'
 export NODE_REPL_HISTORY_SIZE=5000
 export GOPATH="${HOME}/projects/go"
 export PATH="${GOPATH}/bin:${PATH}"
 export SAANCHO_CLIPBOARD="true"
 export MINICOM="-m -c on"
+export WORKON_HOME=~/pyenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+[[ -f "/usr/local/bin/virtualenvwrapper.sh" ]] && source /usr/local/bin/virtualenvwrapper.sh
+
 
 source "${HOME}/.bash_prompt"
 

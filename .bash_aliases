@@ -22,6 +22,7 @@ alias apingrok="ngrok http 4001"
 alias mirror="wget --mirror --page-requisites --adjust-extension --no-parent --convert-links"
 alias script="script -aq"
 alias brc="source ~/.bashrc"
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # node/npm
 alias ni="npm install"
