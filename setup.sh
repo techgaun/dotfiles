@@ -34,3 +34,9 @@ chmod 600 ~/.ssh/config
 if ! grep ".bashrc.defaults" ~/.bashrc > /dev/null; then
   echo "source ~/.bashrc.defaults" >> ~/.bashrc
 fi
+
+[[ ! -e "${HOME}/.bin" ]] && mkdir "${HOME}/.bin"
+
+for f in ${SRC_DIR}/scripts/*; do
+  ln -sf $f "${HOME}/.bin/"
+done
