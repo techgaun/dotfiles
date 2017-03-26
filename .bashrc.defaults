@@ -37,7 +37,7 @@ export SAANCHO_CLIPBOARD="true"
 export MINICOM="-m -c on"
 export WORKON_HOME=~/pyenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-[[ -f "/usr/local/bin/virtualenvwrapper.sh" ]] && source /usr/local/bin/virtualenvwrapper.sh
+[[ -f "/usr/local/bin/virtualenvwrapper_lazy.sh" ]] && source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 
 source "${HOME}/.bash_prompt"
