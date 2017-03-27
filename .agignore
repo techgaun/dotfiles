@@ -1,3 +1,7 @@
 .git/
 *.min.js
 *.min.css
+deps
+doc
+_build
+cover
