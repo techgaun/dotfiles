@@ -51,4 +51,4 @@ func! DeleteTrailingWS()
 endfunc
 au BufWrite * silent call DeleteTrailingWS()
 
-autocmd FileType elixir let g:NERDSpaceDelims = 1
+autocmd FileType elixir,sh let g:NERDSpaceDelims = 1
