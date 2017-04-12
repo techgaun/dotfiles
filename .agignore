@@ -5,3 +5,5 @@ deps
 doc
 _build
 cover
+node_modules
+bower_components
