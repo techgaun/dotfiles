@@ -23,6 +23,7 @@ alias mirror="wget --mirror --page-requisites --adjust-extension --no-parent --c
 alias script="script -aq"
 alias brc="source ~/.bashrc"
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias swatch="watch ss -stplu"
 
 # node/npm
 alias ni="npm install"
