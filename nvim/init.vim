@@ -15,6 +15,7 @@ set incsearch
 set ignorecase smartcase
 set title
 set number
+set autoindent
 
 syntax on
 
@@ -66,6 +67,14 @@ map <C-n> :NERDTreeToggle<CR>
 
 Plug 'neomake/neomake'
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
+
+Plug 'nathanaelkane/vim-indent-guides'
+let indent_guides_auto_colors = 0
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#212121 ctermbg=233
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#404040 ctermbg=234
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
