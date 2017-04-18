@@ -1,6 +1,7 @@
 #!/bin/bash
 
 SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+NVIM_DIR="${HOME}/.config/nvim"
 
 # setup spf13-vim if not installed already or FORCE_VIMINSTALL is set
 if [[ ! -d "${HOME}/.spf13-vim-3" || "x${FORCE_VIMINSTALL}" != "x" ]]; then
@@ -11,6 +12,11 @@ fi
 [[ ! -e "${HOME}/.httpie" ]] && mkdir "${HOME}/.httpie"
 
 [[ -L "${HOME}/.functions" ]] || ln -sf "${SRC_DIR}/.functions" "${HOME}/.functions"
+
+[[ -d "${NVIM_DIR}" ]] || mkdir -p "${NVIM_DIR}"
+
+[[ -d "${NVIM_DIR}/autoload" ]] || curl -fLo "${NVIM_DIR}/autoload/plug.vim" --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ln -sf "${SRC_DIR}/.ackrc" "${HOME}/.ackrc"
 ln -sf "${SRC_DIR}/.agignore" "${HOME}/.agignore"
@@ -23,6 +29,7 @@ ln -sf "${SRC_DIR}/.gitignore" "${HOME}/.gitignore"
 ln -sf "${SRC_DIR}/httpie/config.json" "${HOME}/.httpie/config.json"
 ln -sf "${SRC_DIR}/.iex.exs" "${HOME}/.iex.exs"
 ln -sf "${SRC_DIR}/.iftoprc" "${HOME}/.iftoprc"
+ln -sf "${SRC_DIR}/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
 ln -sf "${SRC_DIR}/.psqlrc" "${HOME}/.psqlrc"
 ln -sf "${SRC_DIR}/ssh_config" "${HOME}/.ssh/config"
 ln -sf "${SRC_DIR}/.tmux.conf" "${HOME}/.tmux.conf"
