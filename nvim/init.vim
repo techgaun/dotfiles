@@ -44,10 +44,6 @@ let g:polyglot_disabled = ['elm', 'elixir']
 Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 autocmd FileType elixir setlocal omnifunc=elixircomplete#Complete
-if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
-endif
-let g:neocomplete#sources#omni#input_patterns.elixir = '[^.[:digit:] *\t]\.'
 let g:alchemist#elixir_erlang_src = "/home/techgaun/.asdf/installs/elixir"
 
 Plug 'c-brenn/phoenix.vim'
@@ -122,3 +118,6 @@ map <Left> :echo "हुँदै हुँदैन!"<cr>
 map <Right> :echo "हुँदै हुँदैन!"<cr>
 map <Up> :echo "हुँदै हुँदैन!"<cr>
 map <Down> :echo "हुँदै हुँदैन!"<cr>
+
+nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
+nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
