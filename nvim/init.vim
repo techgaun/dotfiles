@@ -37,8 +37,6 @@ Plug 'powerman/vim-plugin-AnsiEsc'
 """ Programming Languages #proglang
 Plug 'fatih/vim-go'
 
-Plug 'sheerun/vim-polyglot'
-
 """ Elixir Lang #elixir
 let g:polyglot_disabled = ['elm', 'elixir']
 Plug 'elixir-lang/vim-elixir'
@@ -47,6 +45,8 @@ autocmd FileType elixir setlocal omnifunc=elixircomplete#Complete
 let g:alchemist#elixir_erlang_src = "/home/techgaun/.asdf/installs/elixir"
 
 Plug 'c-brenn/phoenix.vim'
+
+Plug 'sheerun/vim-polyglot'
 
 """ Javascript #js
 Plug 'mxw/vim-jsx'
