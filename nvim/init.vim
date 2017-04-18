@@ -16,6 +16,7 @@ set ignorecase smartcase
 set title
 set number
 set autoindent
+set smartindent
 
 syntax on
 
@@ -88,6 +89,13 @@ Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdcommenter'
 autocmd FileType elixir,sh let g:NERDSpaceDelims = 1
 Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'luna'
+let g:bufferline_echo = 0
+let g:airline_enable_branch=1
+let g:airline_powerline_fonts=1
 
 """ Navigation #nav
 Plug 'ctrlpvim/ctrlp.vim'
@@ -106,4 +114,11 @@ let g:gutentags_cache_dir = '~/.tags_cache'
 
 call plug#end()
 
+set background=dark
+syntax enable
 colorscheme molokai
+
+map <Left> :echo "हुँदै हुँदैन!"<cr>
+map <Right> :echo "हुँदै हुँदैन!"<cr>
+map <Up> :echo "हुँदै हुँदैन!"<cr>
+map <Down> :echo "हुँदै हुँदैन!"<cr>
