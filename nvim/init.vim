@@ -63,10 +63,9 @@ Plug 'mhinz/vim-startify'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 map <C-n> :NERDTreeToggle<CR>
-Plug 'vim-syntastic/syntastic'
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-let g:syntastic_javascript_checkers = ['eslint']
+
+Plug 'neomake/neomake'
+let g:neomake_elixir_enabled_makers = ['mix', 'credo']
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
