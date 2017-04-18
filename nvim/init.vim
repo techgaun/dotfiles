@@ -16,6 +16,8 @@ set ignorecase smartcase
 set title
 set number
 
+syntax on
+
 let g:mapleader = ','
 let g:maplocalleader = ','
 
@@ -34,6 +36,8 @@ Plug 'powerman/vim-plugin-AnsiEsc'
 Plug 'fatih/vim-go'
 
 Plug 'sheerun/vim-polyglot'
+
+""" Elixir Lang #elixir
 let g:polyglot_disabled = ['elm', 'elixir']
 Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
@@ -46,8 +50,23 @@ let g:alchemist#elixir_erlang_src = "/home/techgaun/.asdf/installs/elixir"
 
 Plug 'c-brenn/phoenix.vim'
 
+""" Javascript #js
+Plug 'mxw/vim-jsx'
+Plug 'flowtype/vim-flow'
+
+""" HTML/CSS #htmlcss
+Plug 'ap/vim-css-color'
+
+""" Editor and enhancements #editor
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mhinz/vim-startify'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+map <C-n> :NERDTreeToggle<CR>
+Plug 'vim-syntastic/syntastic'
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+let g:syntastic_javascript_checkers = ['eslint']
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
