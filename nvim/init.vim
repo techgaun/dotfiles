@@ -19,6 +19,8 @@ set number
 let g:mapleader = ','
 let g:maplocalleader = ','
 
+inoremap jk <ESC>
+
 set omnifunc=syntaxcomplete#Complete
 
 call plug#begin()
@@ -47,5 +49,19 @@ let g:deoplete#omni#functions = {}
 let g:deoplete#omni#input_patterns = {}
 
 Plug 'ervandew/supertab'
+Plug 'scrooloose/nerdcommenter'
+autocmd FileType elixir,sh let g:NERDSpaceDelims = 1
+Plug 'tpope/vim-surround'
+
+""" Navigation #nav
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+let g:fzf_layout = { 'window': 'enew' }
+nnoremap <silent> <C-P> :FZF<cr>
+nnoremap <silent> <leader>a :Ag<cr>
+
+Plug 'dietsche/vim-lastplace'
+Plug 'ludovicchabant/vim-gutentags'
+let g:gutentags_cache_dir = '~/.tags_cache'
 
 call plug#end()
