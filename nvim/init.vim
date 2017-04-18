@@ -30,12 +30,20 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-projectionist'  " also required for c-brenn/phoenix.vim
 Plug 'powerman/vim-plugin-AnsiEsc'
 
+""" Programming Languages #proglang
 Plug 'fatih/vim-go'
 
 Plug 'sheerun/vim-polyglot'
 let g:polyglot_disabled = ['elm', 'elixir']
 Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
+autocmd FileType elixir setlocal omnifunc=elixircomplete#Complete
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
+endif
+let g:neocomplete#sources#omni#input_patterns.elixir = '[^.[:digit:] *\t]\.'
+let g:alchemist#elixir_erlang_src = "/home/techgaun/.asdf/installs/elixir"
+
 Plug 'c-brenn/phoenix.vim'
 
 Plug 'editorconfig/editorconfig-vim'
@@ -48,20 +56,27 @@ let g:deoplete#sources._ = ['file', 'neosnippet']
 let g:deoplete#omni#functions = {}
 let g:deoplete#omni#input_patterns = {}
 
+Plug 'tomasr/molokai'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdcommenter'
 autocmd FileType elixir,sh let g:NERDSpaceDelims = 1
 Plug 'tpope/vim-surround'
 
 """ Navigation #nav
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-let g:fzf_layout = { 'window': 'enew' }
-nnoremap <silent> <C-P> :FZF<cr>
-nnoremap <silent> <leader>a :Ag<cr>
+Plug 'ctrlpvim/ctrlp.vim'
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+  let g:ackprg = 'ag --vimgrep --smart-case'
+  cnoreabbrev ag Ack
+  cnoreabbrev aG Ack
+  cnoreabbrev Ag Ack
+  cnoreabbrev AG Ack
+endif
 
 Plug 'dietsche/vim-lastplace'
 Plug 'ludovicchabant/vim-gutentags'
 let g:gutentags_cache_dir = '~/.tags_cache'
 
 call plug#end()
+
+colorscheme molokai

@@ -37,6 +37,7 @@ export SAANCHO_CLIPBOARD="true"
 export MINICOM="-m -c on"
 export WORKON_HOME=~/pyenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export FZF_DEFAULT_COMMAND="ag -l --nocolor --hidden -g"
 [[ -f "/usr/local/bin/virtualenvwrapper_lazy.sh" ]] && source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 export NVM_DIR="${HOME}/.nvm"
