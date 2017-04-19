@@ -22,6 +22,7 @@ syntax on
 
 let g:mapleader = ','
 let g:maplocalleader = ','
+let g:python3_host_prog = '/usr/bin/python3'
 
 inoremap jk <ESC>
 
@@ -35,6 +36,7 @@ Plug 'tpope/vim-projectionist'  " also required for c-brenn/phoenix.vim
 Plug 'powerman/vim-plugin-AnsiEsc'
 
 """ Programming Languages #proglang
+""" Golang #golang
 Plug 'fatih/vim-go'
 
 """ Elixir Lang #elixir
@@ -54,6 +56,9 @@ let g:jsx_ext_required = 0
 
 Plug 'flowtype/vim-flow'
 Plug 'elzr/vim-json'
+
+""" Python
+Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
 """ HTML/CSS #htmlcss
 Plug 'ap/vim-css-color'
@@ -166,3 +171,5 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <silent> <BS> <C-w>h
+
+autocmd FileType python nnoremap <LocalLeader>= :0,$!yapf<CR>
