@@ -141,6 +141,9 @@ let g:gutentags_cache_dir = '~/.tags_cache'
 
 Plug 'easymotion/vim-easymotion'
 
+""" Miscellaneous #misc
+Plug 'lifepillar/vim-cheat40'
+
 call plug#end()
 
 set background=dark
