@@ -63,6 +63,7 @@ Plug 'scrooloose/nerdtree'
 map <C-n> :NERDTreeToggle<CR>
 
 Plug 'neomake/neomake'
+autocmd! BufWritePost * Neomake
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
 
 Plug 'nathanaelkane/vim-indent-guides'
@@ -76,14 +77,22 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#404040 ctermbg=234
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources = {}
-let g:deoplete#sources._ = ['file', 'neosnippet']
+let g:deoplete#sources._ = ['tag', 'file', 'neosnippet']
 let g:deoplete#omni#functions = {}
 let g:deoplete#omni#input_patterns = {}
+let g:deoplete#enable_smart_case = 1
+let g:deoplete#omni#functions.elixir = [
+  \ 'elixircomplete#Complete'
+\]
+
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 
 Plug 'tomasr/molokai'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdcommenter'
-autocmd FileType elixir,sh let g:NERDSpaceDelims = 1
+autocmd FileType elixir,sh,vim let g:NERDSpaceDelims = 1
+
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -121,3 +130,10 @@ map <Down> :echo "हुँदै हुँदैन!"<cr>
 
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+
+let g:SuperTabContextDiscoverDiscovery = ["&omnifunc:<c-x><c-o>"]
+autocmd FileType *
+      \ if &omnifunc != '' |
+      \ call SuperTabChain(&omnifunc, "<c-p>") |
+      \ call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
+      \ endif
