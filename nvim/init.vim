@@ -17,6 +17,7 @@ set title
 set number
 set autoindent
 set smartindent
+set undofile
 
 syntax on
 
