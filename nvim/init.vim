@@ -53,6 +53,7 @@ Plug 'mxw/vim-jsx'
 let g:jsx_ext_required = 0
 
 Plug 'flowtype/vim-flow'
+Plug 'elzr/vim-json'
 
 """ HTML/CSS #htmlcss
 Plug 'ap/vim-css-color'
@@ -114,6 +115,10 @@ let g:bufferline_echo = 0
 let g:airline_enable_branch=1
 let g:airline_powerline_fonts=1
 
+Plug 'airblade/vim-gitgutter'
+
+Plug 'ntpeters/vim-better-whitespace'
+
 """ Navigation #nav
 Plug 'ctrlpvim/ctrlp.vim'
 if executable('ag')
@@ -128,6 +133,8 @@ endif
 Plug 'dietsche/vim-lastplace'
 Plug 'ludovicchabant/vim-gutentags'
 let g:gutentags_cache_dir = '~/.tags_cache'
+
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
