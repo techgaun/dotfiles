@@ -50,10 +50,22 @@ Plug 'sheerun/vim-polyglot'
 
 """ Javascript #js
 Plug 'mxw/vim-jsx'
+let g:jsx_ext_required = 0
+
 Plug 'flowtype/vim-flow'
 
 """ HTML/CSS #htmlcss
 Plug 'ap/vim-css-color'
+
+""" Programming addons #progaddons
+
+Plug 'janko-m/vim-test'
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+let test#strategy = 'neovim'
 
 """ Editor and enhancements #editor
 Plug 'editorconfig/editorconfig-vim'
@@ -128,6 +140,10 @@ map <Right> :echo "हुँदै हुँदैन!"<cr>
 map <Up> :echo "हुँदै हुँदैन!"<cr>
 map <Down> :echo "हुँदै हुँदैन!"<cr>
 
+" max_conn_per_host -> MAX_CONN_PER_HOST
+inoremap <c-u> <ESC>viwUi
+nnoremap <c-u> viwU<ESC>
+
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
@@ -137,3 +153,9 @@ autocmd FileType *
       \ call SuperTabChain(&omnifunc, "<c-p>") |
       \ call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
       \ endif
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <silent> <BS> <C-w>h
