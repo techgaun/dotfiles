@@ -56,6 +56,8 @@ let g:jsx_ext_required = 0
 
 Plug 'flowtype/vim-flow'
 Plug 'elzr/vim-json'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
 
 """ Python
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
