@@ -9,8 +9,13 @@ set shiftwidth=2
 set textwidth=120
 set formatoptions=tcrq
 
+if exists('*mkdir') && !isdirectory($HOME.'/.local/share/nvim/backup')
+  call mkdir($HOME.'/.local/share/nvim/backup')
+endif
+
 set backupcopy=yes
 set backup
+set backupdir=~/.local/share/nvim/backup
 set backupext=-vimbackup
 set undofile
 
