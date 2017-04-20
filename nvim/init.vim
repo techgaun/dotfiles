@@ -170,6 +170,15 @@ map <Down> :echo "हुँदै हुँदैन!"<cr>
 inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<ESC>
 
+iabbrev adn and
+iabbrev THis This
+iabbrev THe The
+iabbrev @@ samar+oss@techgaun.com
+iabbrev ccopy Copyright 2017 techgaun, all rights reserved.
+iabbrev mysite http://www.techgaun.com
+iabbrev mygh https://github.com/techgaun
+iabbrev mytw https://twitter.com/techgaun
+
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
