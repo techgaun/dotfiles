@@ -1,3 +1,6 @@
+let g:python3_host_prog = '/usr/bin/python3'
+let g:startify_custom_header =
+    \ map(split(system('fortune | cowsay'), '\n'), '"   ". v:val')
 let g:spacevim_enable_debug = 0
 let g:spacevim_realtime_leader_guide = 1
 let g:spacevim_default_indent = 2
@@ -36,11 +39,14 @@ endif
 let g:clang2_placeholder_next = ''
 let g:clang2_placeholder_prev = ''
 
-let g:spacevim_disabled_plugins=[]
+let g:spacevim_disabled_plugins=[
+        \ ['floobits/floobits-neovim'],
+    \ ]
 
 let g:spacevim_custom_plugins = [
         \ ['powerman/vim-plugin-AnsiEsc'],
-        \ ['scrooloose/nerdcommenter']
+        \ ['scrooloose/nerdcommenter'],
+        \ ['c-brenn/phoenix.vim', {'on_ft': 'elixir'}],
     \ ]
 
 autocmd FileType elixir,sh,vim let g:NERDSpaceDelims = 1
