@@ -96,6 +96,8 @@ alias rnios="react-native run-ios"
 # hax0r stuff
 alias opensmbshares="nmap -T4 -v -oA shares --script smb-enum-shares --script-args smbuser=username,smbpass=password -p445"  # opensmbshares 192.168.0.0/24
 
+alias qvim="vim -n -u NONE -i NONE -n"
+
 if [[ -f "${HOME}/.bash_aliases_secret" ]]; then
   source ${HOME}/.bash_aliases_secret
 fi
