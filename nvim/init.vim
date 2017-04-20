@@ -8,7 +8,11 @@ set expandtab
 set shiftwidth=2
 set textwidth=120
 set formatoptions=tcrq
+
 set backupcopy=yes
+set backup
+set backupext=-vimbackup
+set undofile
 
 set hlsearch
 set incsearch
@@ -17,7 +21,6 @@ set title
 set number
 set autoindent
 set smartindent
-set undofile
 
 syntax on
 
