@@ -1,4 +1,4 @@
-let g:python3_host_prog = '/usr/bin/python3'
+" let g:python3_host_prog = '/usr/bin/python3'
 let g:startify_custom_header =
     \ map(split(system('fortune | cowsay'), '\n'), '"   ". v:val')
 let g:spacevim_enable_debug = 0
