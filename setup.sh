@@ -9,6 +9,10 @@ if [[ ! -d "${HOME}/.spf13-vim-3" || "x${FORCE_VIMINSTALL}" != "x" ]]; then
     REPO_URI="https://github.com/techgaun/spf13-vim.git" REPO_BRANCH="tg-custom" sh
 fi
 
+if [[ ! -d "${HOME}/.SpaceVim" || "x${FORCE_SPACEVIMINSTALL}" != "x" ]]; then
+  curl -sLf https://spacevim.org/install.sh | bash
+fi
+
 [[ ! -e "${HOME}/.httpie" ]] && mkdir "${HOME}/.httpie"
 
 [[ -L "${HOME}/.functions" ]] || ln -sf "${SRC_DIR}/.functions" "${HOME}/.functions"
@@ -29,7 +33,8 @@ ln -sf "${SRC_DIR}/.gitignore" "${HOME}/.gitignore"
 ln -sf "${SRC_DIR}/httpie/config.json" "${HOME}/.httpie/config.json"
 ln -sf "${SRC_DIR}/.iex.exs" "${HOME}/.iex.exs"
 ln -sf "${SRC_DIR}/.iftoprc" "${HOME}/.iftoprc"
-ln -sf "${SRC_DIR}/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
+# ln -sf "${SRC_DIR}/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
+ln -sf "${SRC_DIR}/nvim/init.vim" "${HOME}/.SpaceVim.d/init.vim"
 ln -sf "${SRC_DIR}/.psqlrc" "${HOME}/.psqlrc"
 ln -sf "${SRC_DIR}/ssh_config" "${HOME}/.ssh/config"
 ln -sf "${SRC_DIR}/.tmux.conf" "${HOME}/.tmux.conf"
