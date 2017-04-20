@@ -39,8 +39,6 @@ set omnifunc=syntaxcomplete#Complete
 
 call plug#begin()
 
-Plug 'tpope/vim-fugitive'
-
 Plug 'tpope/vim-projectionist'  " also required for c-brenn/phoenix.vim
 Plug 'powerman/vim-plugin-AnsiEsc'
 
@@ -49,15 +47,12 @@ Plug 'powerman/vim-plugin-AnsiEsc'
 Plug 'fatih/vim-go'
 
 """ Elixir Lang #elixir
-let g:polyglot_disabled = ['elm', 'elixir']
 Plug 'elixir-lang/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 autocmd FileType elixir setlocal omnifunc=elixircomplete#Complete
 let g:alchemist#elixir_erlang_src = "/home/techgaun/.asdf/installs/elixir"
 
 Plug 'c-brenn/phoenix.vim'
-
-Plug 'sheerun/vim-polyglot'
 
 """ Javascript #js
 Plug 'mxw/vim-jsx'
