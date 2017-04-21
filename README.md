@@ -11,7 +11,8 @@ This dotfiles repo is what I use to setup my systems.
 
 ## Whats in here
 
-- vim configurations that I use along with [spf13-vim](https://github.com/techgaun/spf13-vim)
+- ~~vim configurations that I use along with [spf13-vim](https://github.com/techgaun/spf13-vim)~~
+- vim configurations that I use along with SpaceVim and Neovim
 - tmux configuration
 - bash aliases
 - bash prompt based on [this](https://github.com/mathiasbynens/dotfiles/blob/master/.bash_prompt)
