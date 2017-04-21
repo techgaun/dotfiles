@@ -1,4 +1,11 @@
-" let g:python3_host_prog = '/usr/bin/python3'
+" let g:python_host_prog = '/home/techgaun/.pyenv/versions/neovim2/bin/python'
+" let g:python3_host_prog = '/home/techgaun/.pyenv/versions/neovim/bin/python'
+
+if exists("$VIRTUAL_ENV")
+    let g:python3_host_prog = substitute(system("which -a python3 | head -n2 | tail -n1"), "\n", '', 'g')
+else
+    let g:python3_host_prog = '/usr/bin/python3'
+endif
 let g:startify_custom_header =
     \ map(split(system('fortune | cowsay'), '\n'), '"   ". v:val')
 let g:spacevim_enable_debug = 0
