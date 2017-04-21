@@ -54,6 +54,38 @@ let g:spacevim_custom_plugins = [
         \ ['powerman/vim-plugin-AnsiEsc'],
         \ ['scrooloose/nerdcommenter'],
         \ ['c-brenn/phoenix.vim', {'on_ft': 'elixir'}],
+        \ ['mxw/vim-jsx', {'on_ft': ['javascript', 'javascript.jsx']}]
     \ ]
 
 autocmd FileType elixir,sh,vim let g:NERDSpaceDelims = 1
+
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+  let g:ackprg = 'ag --vimgrep --smart-case'
+  cnoreabbrev ag Ack
+  cnoreabbrev aG Ack
+  cnoreabbrev Ag Ack
+  cnoreabbrev AG Ack
+endif
+
+let g:alchemist#elixir_erlang_src = "/home/techgaun/.asdf/installs/elixir"
+let g:jsx_ext_required = 0
+
+iabbrev adn and
+iabbrev THis This
+iabbrev THe The
+iabbrev @@ samar+oss@techgaun.com
+iabbrev ccopy Copyright 2017 techgaun, all rights reserved.
+iabbrev mysite http://www.techgaun.com
+iabbrev mygh https://github.com/techgaun
+iabbrev mytw https://twitter.com/techgaun
+
+map <Left> :echo "हुँदै हुँदैन!"<cr>
+map <Right> :echo "हुँदै हुँदैन!"<cr>
+map <Up> :echo "हुँदै हुँदैन!"<cr>
+map <Down> :echo "हुँदै हुँदैन!"<cr>
+
+nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
+nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+
+autocmd FileType python nnoremap <LocalLeader>= :0,$!yapf<CR>
