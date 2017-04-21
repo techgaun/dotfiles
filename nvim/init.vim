@@ -39,10 +39,10 @@ let g:spacevim_enable_tabline_filetype_icon = 1
 let g:spacevim_enable_os_fileformat_icon = 1
 let g:spacevim_buffer_index_type = 1
 let g:neomake_vim_enabled_makers = ['vint']
-if has('python3')
-    let g:ctrlp_map = ''
-    nnoremap <silent> <C-p> :Denite file_rec<CR>
-endif
+" if has('python3')
+    " let g:ctrlp_map = ''
+    " nnoremap <silent> <C-p> :Denite file_rec<CR>
+" endif
 let g:clang2_placeholder_next = ''
 let g:clang2_placeholder_prev = ''
 
