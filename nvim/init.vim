@@ -85,7 +85,7 @@ map <Right> :echo "हुँदै हुँदैन!"<cr>
 map <Up> :echo "हुँदै हुँदैन!"<cr>
 map <Down> :echo "हुँदै हुँदैन!"<cr>
 
-nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
-nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>ev :vsplit ~/.SpaceVim.d/init.vim<cr>
+nnoremap <leader>Sv :source ~/.SpaceVim.d/init.vim<cr>
 
-autocmd FileType python nnoremap <LocalLeader>= :0,$!yapf<CR>
+autocmd FileType python nnoremap <Leader><Leader>= :0,$!yapf<CR>
