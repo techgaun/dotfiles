@@ -4,10 +4,10 @@ SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 NVIM_DIR="${HOME}/.config/nvim"
 
 # setup spf13-vim if not installed already or FORCE_VIMINSTALL is set
-if [[ ! -d "${HOME}/.spf13-vim-3" || "x${FORCE_VIMINSTALL}" != "x" ]]; then
-  curl -L -o - https://github.com/techgaun/spf13-vim/raw/3.0/bootstrap.sh | \
-    REPO_URI="https://github.com/techgaun/spf13-vim.git" REPO_BRANCH="tg-custom" sh
-fi
+# if [[ ! -d "${HOME}/.spf13-vim-3" || "x${FORCE_VIMINSTALL}" != "x" ]]; then
+  # curl -L -o - https://github.com/techgaun/spf13-vim/raw/3.0/bootstrap.sh | \
+    # REPO_URI="https://github.com/techgaun/spf13-vim.git" REPO_BRANCH="tg-custom" sh
+# fi
 
 if [[ ! -d "${HOME}/.SpaceVim" || "x${FORCE_SPACEVIMINSTALL}" != "x" ]]; then
   curl -sLf https://spacevim.org/install.sh | bash
@@ -38,8 +38,8 @@ ln -sf "${SRC_DIR}/nvim/init.vim" "${HOME}/.SpaceVim.d/init.vim"
 ln -sf "${SRC_DIR}/.psqlrc" "${HOME}/.psqlrc"
 ln -sf "${SRC_DIR}/ssh_config" "${HOME}/.ssh/config"
 ln -sf "${SRC_DIR}/.tmux.conf" "${HOME}/.tmux.conf"
-ln -sf "${SRC_DIR}/.vimrc.bundles.local" "${HOME}/.vimrc.bundles.local"
-ln -sf "${SRC_DIR}/.vimrc.local" "${HOME}/.vimrc.local"
+# ln -sf "${SRC_DIR}/.vimrc.bundles.local" "${HOME}/.vimrc.bundles.local"
+# ln -sf "${SRC_DIR}/.vimrc.local" "${HOME}/.vimrc.local"
 
 # update perms wherever necessary
 chmod 600 ~/.ssh/config
