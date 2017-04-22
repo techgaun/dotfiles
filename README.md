@@ -24,11 +24,11 @@ This dotfiles repo is what I use to setup my systems.
 
 ## Reinstall vim
 
-- If you wish to re-install/upgrade vim, you can set `FORCE_VIMINSTALL` to some value and
+- If you wish to re-install/upgrade spacevim, you can set `FORCE_SPACEVIMINSTALL` to some value and
 this will enforce installation of vim stuff while running `setup.sh` even if vim is already configured.
 
 ```shell
-FORCE_VIMINSTALL=yup ./setup.sh
+FORCE_SPACEVIMINSTALL=yup ./setup.sh
 ```
 
 ## Notes
