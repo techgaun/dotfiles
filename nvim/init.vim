@@ -6,8 +6,16 @@ if exists("$VIRTUAL_ENV")
 else
     let g:python3_host_prog = '/usr/bin/python3'
 endif
-let g:startify_custom_header =
-    \ map(split(system('fortune | cowsay'), '\n'), '"   ". v:val')
+let g:startify_custom_header = [
+    \'',
+    \'___________           .__                                ',
+    \'\__    ___/___   ____ |  |__    _________   __ __  ____  ',
+    \'  |    |_/ __ \_/ ___\|  |  \  / ___\__  \ |  |  \/    \ ',
+    \'  |    |\  ___/\  \___|   Y  \/ /_/  > __ \|  |  /   |  \',
+    \'  |____| \___  >\___  >___|  /\___  (____  /____/|___|  /',
+    \'             \/     \/     \//_____/     \/           \/ ',
+    \'    www.techgaun.com  https://github.com/techgaun        ',
+    \]
 let g:spacevim_enable_debug = 0
 let g:spacevim_realtime_leader_guide = 1
 let g:spacevim_default_indent = 2
