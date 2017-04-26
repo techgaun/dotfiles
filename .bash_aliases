@@ -24,6 +24,7 @@ alias brc="source ~/.bashrc"
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias swatch="watch ss -stplu"
 alias nmrs="sudo /etc/init.d/network-manager restart"
+alias pipall="pip list --outdated | cut -d' ' -f1 | xargs pip install --upgrade"
 
 # node/npm
 alias ni="npm install"
