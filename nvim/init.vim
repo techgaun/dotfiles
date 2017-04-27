@@ -1,3 +1,8 @@
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set textwidth=120
+
 " let g:python_host_prog = '/home/techgaun/.pyenv/versions/neovim2/bin/python'
 " let g:python3_host_prog = '/home/techgaun/.pyenv/versions/neovim/bin/python'
 
