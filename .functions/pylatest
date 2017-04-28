@@ -1,3 +1,5 @@
+# you need the following
+# sudo wget 'https://raw.githubusercontent.com/techgaun/pypi-ver.py/master/pypi-ver.py' -O /usr/bin/pypi-ver && sudo chmod +x /usr/bin/pypi-ver
 pylatest() {
   if [[ "$#" -ne 1 ]]; then
     echo "Usage: $0 <package>"
