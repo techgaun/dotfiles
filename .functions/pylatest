@@ -1,8 +1,7 @@
 pylatest() {
   if [[ "$#" -ne 1 ]]; then
     echo "Usage: $0 <package>"
-    exit 1
+  else
+    pypi-ver "${1}" | head -n1
   fi
-
-  pypi-ver "${1}" | head -n1
 }
