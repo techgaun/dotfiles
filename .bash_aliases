@@ -25,6 +25,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias swatch="watch ss -stplu"
 alias nmrs="sudo /etc/init.d/network-manager restart"
 alias pipall="pip list --outdated | cut -d' ' -f1 | xargs pip install --upgrade"
+alias mympd="mpd -v --no-daemon --stderr ~/.mpd.conf"
 
 # node/npm
 alias ni="npm install"
