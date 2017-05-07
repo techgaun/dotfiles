@@ -61,12 +61,15 @@ let g:clang2_placeholder_prev = ''
 
 let g:spacevim_disabled_plugins=[
         \ ['floobits/floobits-neovim'],
+        \ ['vim-chat/vim-chat'],
+        \ ['itchyny/screensaver.vim'],
+        \ ['vimcn/vimcdoc'],
     \ ]
 
 let g:spacevim_custom_plugins = [
         \ ['powerman/vim-plugin-AnsiEsc'],
         \ ['c-brenn/phoenix.vim'],
-        \ ['mxw/vim-jsx', {'on_ft': ['javascript', 'javascript.jsx']}]
+        \ ['mxw/vim-jsx', {'on_ft': ['javascript', 'javascript.jsx']}],
     \ ]
 
 autocmd FileType elixir,sh,vim let g:NERDSpaceDelims = 1
