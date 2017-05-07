@@ -65,7 +65,7 @@ let g:spacevim_disabled_plugins=[
 
 let g:spacevim_custom_plugins = [
         \ ['powerman/vim-plugin-AnsiEsc'],
-        \ ['c-brenn/phoenix.vim', {'on_ft': 'elixir'}],
+        \ ['c-brenn/phoenix.vim'],
         \ ['mxw/vim-jsx', {'on_ft': ['javascript', 'javascript.jsx']}]
     \ ]
 
