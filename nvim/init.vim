@@ -64,6 +64,7 @@ let g:spacevim_disabled_plugins=[
         \ ['vim-chat/vim-chat'],
         \ ['itchyny/screensaver.vim'],
         \ ['vimcn/vimcdoc'],
+        \ ['junegunn/vim-emoji'],
     \ ]
 
 let g:spacevim_custom_plugins = [
