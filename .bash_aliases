@@ -27,6 +27,7 @@ alias nmrs="sudo /etc/init.d/network-manager restart"
 alias pipall="pip list --outdated | cut -d' ' -f1 | xargs pip install --upgrade"
 alias mympd="mpd -v --no-daemon --stderr ~/.mpd.conf"
 alias dotfiles="cd ${HOME}/projects/personal/dotfiles"
+alias acmsniff="interceptty -s 'ispeed 115200 ospeed 115200' /dev/ttyACM0 /tmp/ttyACM0"
 
 # node/npm
 alias ni="npm install"
