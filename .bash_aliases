@@ -78,13 +78,13 @@ alias hpurge="heroku repo:purge_cache --app"
 
 # elixir/mix
 alias mn="mix new"
-alias mpn="mix phoenix.new"
-alias mps="mix phoenix.server"
+alias mpn="mix phx.new"
+alias mps="mix phx.server"
 alias mer="mix ecto.reset"
 alias mch="mix coveralls.html"
 alias mtw="mix test --only wip"
 alias mrh="mix run --no-halt"
-alias mpr="mix phoenix.routes"
+alias mpr="mix phx.routes"
 
 # go stuff
 alias godoch="godoc -http=:4000"
