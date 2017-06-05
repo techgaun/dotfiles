@@ -43,8 +43,9 @@ call SpaceVim#layers#load('lang#python')
 call SpaceVim#layers#load('lang#xml')
 call SpaceVim#layers#load('lang#haskell')
 call SpaceVim#layers#load('lang#elixir')
-call SpaceVim#layers#load('tools#screensaver')
+" call SpaceVim#layers#load('tools#screensaver')
 call SpaceVim#layers#load('shell')   
+call SpaceVim#layers#load('tmux')   
 let g:spacevim_enable_vimfiler_welcome = 1
 let g:spacevim_enable_debug = 0
 let g:deoplete#auto_complete_delay = 150
