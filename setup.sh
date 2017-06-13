@@ -2,6 +2,7 @@
 
 SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 NVIM_DIR="${HOME}/.config/nvim"
+SPACEVIM_DIR="${HOME}/.SpaceVim.d"
 
 if [[ ! -d "${HOME}/.SpaceVim" || "x${FORCE_SPACEVIMINSTALL}" != "x" ]]; then
   curl -sLf https://spacevim.org/install.sh | bash
@@ -12,6 +13,8 @@ fi
 [[ -L "${HOME}/.functions" ]] || ln -sf "${SRC_DIR}/.functions" "${HOME}/.functions"
 
 [[ -d "${NVIM_DIR}" ]] || mkdir -p "${NVIM_DIR}"
+
+[[ -d "${SPACEVIM_DIR}" ]] || mkdir -p "${SPACEVIM_DIR}"
 
 [[ -d "${NVIM_DIR}/autoload" ]] || curl -fLo "${NVIM_DIR}/autoload/plug.vim" --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -35,8 +38,6 @@ ln -sf "${SRC_DIR}/.psqlrc" "${HOME}/.psqlrc"
 ln -sf "${SRC_DIR}/.pythonrc.py" "${HOME}/.pythonrc.py"
 ln -sf "${SRC_DIR}/ssh_config" "${HOME}/.ssh/config"
 ln -sf "${SRC_DIR}/.tmux.conf" "${HOME}/.tmux.conf"
-# ln -sf "${SRC_DIR}/.vimrc.bundles.local" "${HOME}/.vimrc.bundles.local"
-# ln -sf "${SRC_DIR}/.vimrc.local" "${HOME}/.vimrc.local"
 
 # update perms wherever necessary
 chmod 600 ~/.ssh/config
