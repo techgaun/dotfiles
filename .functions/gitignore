@@ -1,0 +1,3 @@
+gi() {
+  curl -s "https://www.gitignore.io/api/$@" | sed -E '/#.*(Created by|End of|ERROR)/d' | cat -s
+}
