@@ -44,6 +44,7 @@ call SpaceVim#layers#load('lang#python')
 call SpaceVim#layers#load('lang#xml')
 call SpaceVim#layers#load('lang#haskell')
 call SpaceVim#layers#load('lang#elixir')
+call SpaceVim#layers#load('lang#tmux')
 " call SpaceVim#layers#load('tools#screensaver')
 call SpaceVim#layers#load('shell')   
 call SpaceVim#layers#load('tmux')   
@@ -70,10 +71,10 @@ let g:spacevim_disabled_plugins=[
     \ ]
 
 let g:spacevim_custom_plugins = [
-        \ ['tmux-plugins/vim-tmux'],
         \ ['powerman/vim-plugin-AnsiEsc'],
         \ ['c-brenn/phoenix.vim'],
         \ ['mxw/vim-jsx', {'on_ft': ['javascript', 'javascript.jsx']}],
+        \ ['haya14busa/dein-command.vim'],
     \ ]
 
 augroup NERDCommenter
