@@ -1,3 +1,4 @@
+scriptencoding utf-8
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -6,8 +7,8 @@ set textwidth=120
 " let g:python_host_prog = '/home/techgaun/.pyenv/versions/neovim2/bin/python'
 " let g:python3_host_prog = '/home/techgaun/.pyenv/versions/neovim/bin/python'
 
-if exists("$VIRTUAL_ENV")
-    let g:python3_host_prog = substitute(system("which -a python3 | head -n2 | tail -n1"), "\n", '', 'g')
+if exists('$VIRTUAL_ENV')
+    let g:python3_host_prog = substitute(system('which -a python3 | head -n2 | tail -n1'), '\n', '', 'g')
 else
     let g:python3_host_prog = '/usr/bin/python3'
 endif
@@ -26,8 +27,8 @@ let g:spacevim_realtime_leader_guide = 1
 let g:spacevim_default_indent = 2
 let g:spacevim_max_column = 120
 let g:spacevim_colorscheme = 'molokai'
-let mapleader = ','
-let localmapleader = ','
+let g:mapleader = ','
+let g:localmapleader = ','
 call SpaceVim#layers#load('lang#go')
 call SpaceVim#layers#load('lang#php')
 call SpaceVim#layers#load('lang#c')
@@ -69,12 +70,15 @@ let g:spacevim_disabled_plugins=[
     \ ]
 
 let g:spacevim_custom_plugins = [
+        \ ['tmux-plugins/vim-tmux'],
         \ ['powerman/vim-plugin-AnsiEsc'],
         \ ['c-brenn/phoenix.vim'],
         \ ['mxw/vim-jsx', {'on_ft': ['javascript', 'javascript.jsx']}],
     \ ]
 
-autocmd FileType elixir,sh,vim let g:NERDSpaceDelims = 1
+augroup NERDCommenter
+  autocmd FileType elixir,sh,vim let g:NERDSpaceDelims = 1
+augroup end
 
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
@@ -85,7 +89,7 @@ if executable('ag')
   cnoreabbrev AG Ack
 endif
 
-let g:alchemist#elixir_erlang_src = "/home/techgaun/.asdf/installs/elixir"
+let g:alchemist#elixir_erlang_src = '/home/techgaun/.asdf/installs/elixir'
 let g:jsx_ext_required = 0
 
 iabbrev adn and
