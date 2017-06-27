@@ -12,6 +12,8 @@ fi
 
 [[ -L "${HOME}/.functions" ]] || ln -sf "${SRC_DIR}/.functions" "${HOME}/.functions"
 
+[[ -f "${HOME}/.functions/tmuxinator.bash" ]] || wget 'https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.bash' -O "${HOME}/.functions/tmuxinator.bash"
+
 [[ -d "${NVIM_DIR}" ]] || mkdir -p "${NVIM_DIR}"
 
 [[ -d "${SPACEVIM_DIR}" ]] || mkdir -p "${SPACEVIM_DIR}"
