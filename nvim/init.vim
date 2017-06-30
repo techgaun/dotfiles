@@ -61,6 +61,7 @@ let g:neomake_vim_enabled_makers = ['vint']
 " endif
 let g:clang2_placeholder_next = ''
 let g:clang2_placeholder_prev = ''
+let g:deoplete#sources#clang#executable = '/usr/bin/clang-4.0'
 
 let g:spacevim_disabled_plugins=[
         \ ['floobits/floobits-neovim'],
