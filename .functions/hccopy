@@ -1,0 +1,11 @@
+# function to copy configuration and write as .env file
+
+hccopy() {
+  if [[ "${1}x" == "x" ]]; then
+    echo "Application name expected as an argument"
+  elif [[ -f "${PWD}/.env" ]]; then
+    echo ".env file exists already. Not overwriting..."
+  else
+    heroku config --app "${1}" --shell > .env
+  fi
+}
