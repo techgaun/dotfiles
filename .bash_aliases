@@ -77,6 +77,9 @@ alias hmaintoff="heroku maintenance:off --app"
 alias hzero="heroku ps:scale web=0 --app"
 alias hone="heroku ps:scale web=1 --app"
 alias hpurge="heroku repo:purge_cache --app"
+alias hps="heroku ps --app"
+alias hpexec="heroku ps:exec --app"
+alias hrs="heroku restart --app"
 
 # elixir/mix
 alias mn="mix new"
