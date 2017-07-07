@@ -31,6 +31,7 @@ alias ldmrs="sudo /etc/init.d/lightdm restart"
 alias acmsniff="interceptty -s 'ispeed 115200 ospeed 115200' /dev/ttyACM0 /tmp/ttyACM0"
 alias sysup="sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove"
 alias ytmp3="youtube-dl -x --audio-format mp3 --audio-quality 0"
+alias src="apt source"
 
 # node/npm
 alias ni="npm install"
