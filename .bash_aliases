@@ -116,3 +116,7 @@ fi
 
 ag=$(command -v ag)
 [[ "$?" -eq 0 ]] && alias ag="ag --path-to-ignore ~/.agignore"
+
+if type nvim &> /dev/null; then
+  alias vim="nvim"
+fi
