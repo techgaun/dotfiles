@@ -77,6 +77,7 @@ let g:spacevim_custom_plugins = [
         \ ['mxw/vim-jsx', {'on_ft': ['javascript', 'javascript.jsx']}],
         \ ['haya14busa/dein-command.vim'],
         \ ['tpope/vim-eunuch'],
+        \ ['junegunn/fzf.vim']
     \ ]
 
 augroup NERDCommenter
