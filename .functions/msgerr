@@ -1,0 +1,19 @@
+red='\033[0;31m'
+green='\033[0;32m'
+nc='\033[0m'
+default_err='an error occurred'
+
+print_decorated() {
+  echo -e "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $@" >&2
+}
+
+error() {
+    msg="${1:-$default_err}"
+    print_decorated "${red}${msg}${nc}"
+    exit 1
+}
+
+msg() {
+    msg="${1:-nothing}"
+    print_decorated "${green}${msg}${nc}"
+}
