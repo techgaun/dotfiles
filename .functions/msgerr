@@ -4,7 +4,7 @@ nc='\033[0m'
 default_err='an error occurred'
 
 print_decorated() {
-  echo -e "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $@" >&2
+  echo -e "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $*" >&2
 }
 
 error() {
