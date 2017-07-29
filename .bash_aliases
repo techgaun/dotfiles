@@ -103,6 +103,8 @@ alias getu="go get -u"
 alias rn="react-native"
 alias rnand="react-native run-android"
 alias rnios="react-native run-ios"
+alias rnland="react-native log-android"
+alias rnlios="react-native log-ios"
 
 # hax0r stuff
 alias opensmbshares="nmap -T4 -v -oA shares --script smb-enum-shares --script-args smbuser=username,smbpass=password -p445"  # opensmbshares 192.168.0.0/24
