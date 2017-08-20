@@ -49,6 +49,7 @@ call SpaceVim#layers#load('lang#tmux')
 " call SpaceVim#layers#load('tools#screensaver')
 call SpaceVim#layers#load('shell')   
 call SpaceVim#layers#load('tmux')   
+call SpaceVim#layers#load('tags')   
 let g:spacevim_enable_vimfiler_welcome = 1
 let g:spacevim_enable_debug = 0
 let g:deoplete#auto_complete_delay = 150
