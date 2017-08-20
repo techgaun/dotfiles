@@ -18,3 +18,9 @@ npm-debug.log*
 
 tmuxinator.bash
 .tmuxinator.yml
+
+# gtags generated
+GPATH
+GRTAGS
+GSYMS
+GTAGS
