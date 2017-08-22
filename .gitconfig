@@ -21,6 +21,7 @@
   lp = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
   mc = clone --branch=master --depth 50
+  mm = merge master
   rp = remote prune origin
   s = status -s
   d = diff --cached
