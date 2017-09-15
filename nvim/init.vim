@@ -116,6 +116,7 @@ map <Down> :echo "हुँदै हुँदैन!"<cr>
 
 nnoremap <leader>ev :vsplit ~/.SpaceVim.d/init.vim<cr>
 nnoremap <leader>Sv :source ~/.SpaceVim.d/init.vim<cr>
+nnoremap <leader>jt :! find . -type f -iregex ".*\.js$" -not -path "./node_modules/*" -exec jsctags {} -f \; \| sed '/^$/d' \| sort > tags
 
 autocmd FileType python nnoremap <Leader><Leader>= :0,$!yapf<CR>
 
