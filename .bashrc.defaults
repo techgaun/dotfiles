@@ -41,6 +41,7 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export FZF_DEFAULT_COMMAND='ag -l --nocolor --hidden -g ""'
 export COLORTERM="gnome-terminal"
 export GTAGSLABEL="pygments"
+export ERL_AFLAGS="-kernel shell_history enabled"
 [[ -f "/usr/local/bin/virtualenvwrapper_lazy.sh" ]] && source /usr/local/bin/virtualenvwrapper_lazy.sh
 [[ -f "${HOME}/.pythonrc.py" ]] && export PYTHONSTARTUP="${HOME}/.pythonrc.py"
 export NVM_DIR="${HOME}/.nvm"
