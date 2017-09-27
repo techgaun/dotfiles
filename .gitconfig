@@ -28,6 +28,7 @@
   patch = !git --no-pager diff --no-color
   git = !exec git
   g = !exec git
+  praise = blame
 
 [commit]
   gpgsign = true
