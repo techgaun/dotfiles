@@ -26,6 +26,8 @@
   s = status -s
   d = diff --cached
   patch = !git --no-pager diff --no-color
+  git = !exec git
+  g = !exec git
 
 [commit]
   gpgsign = true
