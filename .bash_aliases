@@ -98,6 +98,7 @@ alias gb="go build -x"
 alias gr="go run -x"
 alias get="go get"
 alias getu="go get -u"
+alias goproj="cd ~/projects/go"
 
 # react/react-native stuff
 alias rn="react-native"
