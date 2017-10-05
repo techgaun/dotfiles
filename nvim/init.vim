@@ -47,9 +47,9 @@ call SpaceVim#layers#load('lang#haskell')
 call SpaceVim#layers#load('lang#elixir')
 call SpaceVim#layers#load('lang#tmux')
 " call SpaceVim#layers#load('tools#screensaver')
-call SpaceVim#layers#load('shell')   
-call SpaceVim#layers#load('tmux')   
-call SpaceVim#layers#load('tags')   
+call SpaceVim#layers#load('shell')
+call SpaceVim#layers#load('tmux')
+call SpaceVim#layers#load('tags')
 " let g:gutentags_ctags_executable = 'gtags'
 " let g:tagbar_ctags_bin = 'gtags'
 let g:spacevim_enable_vimfiler_welcome = 1
