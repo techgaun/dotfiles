@@ -25,6 +25,7 @@
   mm = merge master
   rp = remote prune origin
   s = status -s
+  sl = stash list
   d = diff --cached
   patch = !git --no-pager diff --no-color
   git = !exec git
