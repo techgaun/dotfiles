@@ -34,6 +34,7 @@ alias ytmp3="youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias src="apt source"
 
 # node/npm
+alias n="npm"
 alias ni="npm install"
 alias nis="npm install --save"
 alias nid="npm install --save-dev"
@@ -83,6 +84,7 @@ alias hpexec="heroku ps:exec --app"
 alias hrs="heroku restart --app"
 
 # elixir/mix
+alias m="mix"
 alias mn="mix new"
 alias mpn="mix phx.new"
 alias mps="mix phx.server"
