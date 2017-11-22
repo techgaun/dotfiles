@@ -1,10 +1,17 @@
 --smart-case
 --color
+--ignore-file=is:tags
+--ignore-file=is:GTAGS
+--ignore-file=is:GPATH
+--ignore-file=is:GRTAGS
+--ignore-file=match:/(.)*.min.js/
+--ignore-file=match:/app-(.)*.js/
 --ignore-dir=_build
 --ignore-dir=dist
 --ignore-dir=bower_components
 --ignore-dir=node_modules
 --ignore-dir=deps
 --ignore-dir=cover
+--ignore-dir=coverage
 --ignore-dir=apidoc
 --type-add=css:ext:scss
