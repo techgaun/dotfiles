@@ -30,6 +30,7 @@ let g:spacevim_max_column = 120
 let g:spacevim_colorscheme = 'molokai'
 let g:mapleader = ','
 let g:localmapleader = ','
+let g:LanguageClient_autoStart = 1
 call SpaceVim#layers#load('lang#go')
 call SpaceVim#layers#load('lang#php')
 call SpaceVim#layers#load('lang#c')
@@ -50,6 +51,7 @@ call SpaceVim#layers#load('lang#tmux')
 call SpaceVim#layers#load('shell')
 call SpaceVim#layers#load('tmux')
 call SpaceVim#layers#load('tags')
+call SpaceVim#layers#load('lsp')
 " let g:gutentags_ctags_executable = 'gtags'
 " let g:tagbar_ctags_bin = 'gtags'
 let g:spacevim_enable_vimfiler_welcome = 1
