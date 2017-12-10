@@ -227,3 +227,11 @@ let g:tagbar_type_typescript = {
     \ 'e:enums',
   \ ]
   \ }
+
+let g:vimfiler_ignore_pattern = get(g:, 'vimfiler_ignore_pattern', [
+      \ '^\.git$',
+      \ '^\.DS_Store$',
+      \ '^\.init\.vim-rplugin\~$',
+      \ '^\.netrwhist$',
+      \ '\.class$',
+      \])
