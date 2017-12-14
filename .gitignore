@@ -27,3 +27,4 @@ GTAGS
 tags
 tags.lock
 tags.temp
+*.coverdata
