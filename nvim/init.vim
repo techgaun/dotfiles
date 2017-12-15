@@ -237,6 +237,6 @@ let g:vimfiler_ignore_pattern = get(g:, 'vimfiler_ignore_pattern', [
       \])
 
 " let g:LanguageClient_serverCommands = {
-"   \ 'elixir': ['env', 'ERL_LIBS=/home/techgaun/projects/elixir-ls/lsp', 'mix', 'elixir_ls.language_server'],
-"   \ 'eelixir': ['env', 'ERL_LIBS=/home/techgaun/projects/elixir-ls/lsp', 'mix', 'elixir_ls.language_server'],
+"   \ 'elixir': ['lspelixir'],
+"   \ 'eelixir': ['lspelixir'],
 "   \ }
