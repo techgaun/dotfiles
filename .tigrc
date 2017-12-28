@@ -1,0 +1,2 @@
+bind generic <Ctrl-f> move-page-down
+bind generic <Ctrl-b> move-page-up

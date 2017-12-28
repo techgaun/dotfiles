@@ -43,6 +43,7 @@ ln -sf "${SRC_DIR}/nvim/init.vim" "${HOME}/.SpaceVim.d/init.vim"
 ln -sf "${SRC_DIR}/.psqlrc" "${HOME}/.psqlrc"
 ln -sf "${SRC_DIR}/.pythonrc.py" "${HOME}/.pythonrc.py"
 ln -sf "${SRC_DIR}/ssh_config" "${HOME}/.ssh/config"
+ln -sf "${SRC_DIR}/.tigrc" "${HOME}/.tigrc"
 ln -sf "${SRC_DIR}/.tmux.conf" "${HOME}/.tmux.conf"
 
 # update perms wherever necessary
