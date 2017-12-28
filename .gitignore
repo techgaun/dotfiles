@@ -28,3 +28,4 @@ tags
 tags.lock
 tags.temp
 *.coverdata
+tmp/
