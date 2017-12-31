@@ -104,6 +104,7 @@ if executable('ag')
 endif
 
 let g:alchemist#elixir_erlang_src = '/home/techgaun/.asdf/installs/elixir'
+let g:alchemist_tag_map = '<space>ld'
 let g:jsx_ext_required = 0
 
 iabbrev adn and
