@@ -1,3 +1,0 @@
-#!/bin/bash
-
-env ERL_LIBS=/home/techgaun/projects/elixir-ls/lsp mix elixir_ls.language_server

@@ -76,6 +76,7 @@ let g:spacevim_disabled_plugins=[
         \ ['itchyny/screensaver.vim'],
         \ ['vimcn/vimcdoc'],
         \ ['junegunn/vim-emoji'],
+        \ ['SpaceVim/LanguageClient-neovim'],
     \ ]
 
 let g:spacevim_custom_plugins = [
@@ -84,7 +85,9 @@ let g:spacevim_custom_plugins = [
         \ ['mxw/vim-jsx', {'on_ft': ['javascript', 'javascript.jsx']}],
         \ ['haya14busa/dein-command.vim'],
         \ ['tpope/vim-eunuch'],
-        \ ['junegunn/fzf.vim']
+        \ ['junegunn/fzf.vim'],
+        \ ['prabirshrestha/async.vim'],
+        \ ['prabirshrestha/vim-lsp'],
     \ ]
 
 augroup NERDCommenter
@@ -236,7 +239,4 @@ let g:vimfiler_ignore_pattern = get(g:, 'vimfiler_ignore_pattern', [
       \ '\.class$',
       \])
 
-" let g:LanguageClient_serverCommands = {
-"   \ 'elixir': ['lspelixir'],
-"   \ 'eelixir': ['lspelixir'],
-"   \ }
+let g:chromatica#libclang_path = '/usr/lib/x86_64-linux-gnu/libclang-4.0.so.1'
