@@ -240,3 +240,13 @@ let g:vimfiler_ignore_pattern = get(g:, 'vimfiler_ignore_pattern', [
       \])
 
 let g:chromatica#libclang_path = '/usr/lib/x86_64-linux-gnu/libclang-4.0.so.1'
+
+" https://github.com/JakeBecker/elixir-ls/issues/35#issuecomment-351522003
+augroup elixir_lsp
+  au!
+  au User lsp_setup call lsp#register_server({
+    \ 'name': 'elixir-ls',
+    \ 'cmd': {server_info->[&shell, &shellcmdflag, 'env ERL_LIBS=/home/techgaun/projects/elixir-ls/lsp mix elixir_ls.language_server']},
+    \ 'whitelist': ['elixir', 'eelixir'],
+    \ })
+augroup END
