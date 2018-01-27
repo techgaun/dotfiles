@@ -31,6 +31,8 @@
   git = !exec git
   g = !exec git
   praise = blame
+  stu = stash save -u
+  sts = stash show
 
 [commit]
   gpgsign = true
