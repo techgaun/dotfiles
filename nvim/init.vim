@@ -62,6 +62,7 @@ let g:spacevim_enable_os_fileformat_icon = 1
 let g:spacevim_buffer_index_type = 1
 let g:neomake_vim_enabled_makers = ['vint']
 let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+let g:vim_json_syntax_conceal = 0
 " if has('python3')
     " let g:ctrlp_map = ''
     " nnoremap <silent> <C-p> :Denite file_rec<CR>
@@ -244,11 +245,11 @@ let g:vimfiler_ignore_pattern = get(g:, 'vimfiler_ignore_pattern', [
 let g:chromatica#libclang_path = '/usr/lib/x86_64-linux-gnu/libclang-4.0.so.1'
 
 " https://github.com/JakeBecker/elixir-ls/issues/35#issuecomment-351522003
-augroup elixir_lsp
-  au!
-  au User lsp_setup call lsp#register_server({
-    \ 'name': 'elixir-ls',
-    \ 'cmd': {server_info->[&shell, &shellcmdflag, 'env ERL_LIBS=/home/techgaun/projects/elixir-ls/lsp mix elixir_ls.language_server']},
-    \ 'whitelist': ['elixir', 'eelixir'],
-    \ })
-augroup END
+" augroup elixir_lsp
+"   au!
+"   au User lsp_setup call lsp#register_server({
+"     \ 'name': 'elixir-ls',
+"     \ 'cmd': {server_info->[&shell, &shellcmdflag, 'env ERL_LIBS=/home/techgaun/projects/elixir-ls/lsp mix elixir_ls.language_server']},
+"     \ 'whitelist': ['elixir', 'eelixir'],
+"     \ })
+" augroup END
