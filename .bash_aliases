@@ -36,6 +36,8 @@ alias src="apt source"
 # python
 alias venv="virtualenv --python=python3 venv"
 alias venv2="virtualenv --python=python2 venv2"
+alias svenv="source venv/bin/activate"
+alias svenv2="source venv2/bin/activate"
 
 # node/npm
 alias n="npm"
