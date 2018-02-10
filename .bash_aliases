@@ -33,6 +33,10 @@ alias sysup="sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove"
 alias ytmp3="youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias src="apt source"
 
+# python
+alias venv="virtualenv --python=python3 venv"
+alias venv2="virtualenv --python=python2 venv2"
+
 # node/npm
 alias n="npm"
 alias ni="npm install"

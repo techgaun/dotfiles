@@ -32,6 +32,7 @@ let g:mapleader = ','
 let g:localmapleader = ','
 let g:LanguageClient_autoStart = 1
 call SpaceVim#layers#load('incsearch')
+call SpaceVim#layers#load('github')
 call SpaceVim#layers#load('lang#c')
 call SpaceVim#layers#load('lang#elixir')
 call SpaceVim#layers#load('lang#go')
