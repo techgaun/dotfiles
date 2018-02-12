@@ -1,0 +1,5 @@
+sslexpiry() {
+  echo | openssl s_client -connect "${1}" 2> /dev/null | \
+  openssl x509 -noout -enddate | \
+  cut -d = -f 2
+}
