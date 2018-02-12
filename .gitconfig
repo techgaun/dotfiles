@@ -33,6 +33,7 @@
   praise = blame
   stu = stash save -u
   sts = stash show
+  sp = stash pop
 
 [commit]
   gpgsign = true
