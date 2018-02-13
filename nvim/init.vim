@@ -31,6 +31,7 @@ let g:spacevim_colorscheme = 'molokai'
 let g:mapleader = ','
 let g:localmapleader = ','
 let g:LanguageClient_autoStart = 1
+let g:spacevim_lint_on_save = 1
 call SpaceVim#layers#load('incsearch')
 call SpaceVim#layers#load('github')
 call SpaceVim#layers#load('lang#c')
@@ -103,6 +104,11 @@ augroup NERDCommenter
   autocmd FileType elixir,sh,vim let g:NERDSpaceDelims = 1
 augroup end
 
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
+
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
   let g:ackprg = 'ag --vimgrep --smart-case'
@@ -134,7 +140,9 @@ nnoremap <leader>ev :vsplit ~/.SpaceVim.d/init.vim<cr>
 nnoremap <leader>Sv :source ~/.SpaceVim.d/init.vim<cr>
 nnoremap <leader>jt :! find . -type f -iregex ".*\.js$" -not -path "./node_modules/*" -exec jsctags {} -f \; \| sed '/^$/d' \| sort > tags
 
-autocmd FileType python nnoremap <Leader><Leader>= :0,$!yapf<CR>
+augroup fmtpy
+  autocmd FileType python nnoremap <Leader><Leader>= :0,$!yapf<CR>
+augroup END
 
 " ctags stuff
 let g:tagbar_type_ansible = {
