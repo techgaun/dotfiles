@@ -32,6 +32,8 @@ let g:mapleader = ','
 let g:localmapleader = ','
 let g:LanguageClient_autoStart = 1
 let g:spacevim_lint_on_save = 1
+let g:spacevim_auto_disable_touchpad = 0
+
 call SpaceVim#layers#load('incsearch')
 call SpaceVim#layers#load('github')
 call SpaceVim#layers#load('lang#c')
@@ -104,10 +106,10 @@ augroup NERDCommenter
   autocmd FileType elixir,sh,vim let g:NERDSpaceDelims = 1
 augroup end
 
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END
+" augroup fmt
+"   autocmd!
+"   autocmd BufWritePre * undojoin | Neoformat
+" augroup END
 
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
