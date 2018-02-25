@@ -97,8 +97,6 @@ let g:spacevim_custom_plugins = [
         \ ['haya14busa/dein-command.vim'],
         \ ['tpope/vim-eunuch'],
         \ ['junegunn/fzf.vim'],
-        \ ['prabirshrestha/async.vim'],
-        \ ['prabirshrestha/vim-lsp'],
         \ ['prettier/vim-prettier', {'on_ft': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'], 'build': 'yarn install'}]
     \ ]
 
