@@ -33,6 +33,8 @@ let g:localmapleader = ','
 let g:LanguageClient_autoStart = 1
 let g:spacevim_lint_on_save = 1
 let g:spacevim_auto_disable_touchpad = 0
+let g:spacevim_enable_neomake = 0
+let g:spacevim_enable_ale = 1
 
 call SpaceVim#layers#load('incsearch')
 call SpaceVim#layers#load('github')
