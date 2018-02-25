@@ -36,8 +36,8 @@ let g:spacevim_auto_disable_touchpad = 0
 let g:spacevim_enable_neomake = 0
 let g:spacevim_enable_ale = 1
 
-call SpaceVim#layers#load('incsearch')
 call SpaceVim#layers#load('github')
+call SpaceVim#layers#load('incsearch')
 call SpaceVim#layers#load('lang#c')
 call SpaceVim#layers#load('lang#elixir')
 call SpaceVim#layers#load('lang#go')
