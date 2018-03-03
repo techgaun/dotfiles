@@ -66,6 +66,7 @@ call SpaceVim#layers#load('lsp')
 call SpaceVim#layers#load('shell')
 call SpaceVim#layers#load('tags')
 call SpaceVim#layers#load('tmux')
+call SpaceVim#layers#load('tools')
 " call SpaceVim#layers#load('tools#screensaver')
 " let g:gutentags_ctags_executable = 'gtags'
 " let g:tagbar_ctags_bin = 'gtags'
