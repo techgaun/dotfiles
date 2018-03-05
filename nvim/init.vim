@@ -86,6 +86,11 @@ let g:spacevim_buffer_index_type = 1
 let g:neomake_vim_enabled_makers = ['vint']
 let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
 let g:vim_json_syntax_conceal = 0
+
+" goyo settings
+let g:goyo_width = 110
+let g:goyo_height = '90%'
+
 " if has('python3')
     " let g:ctrlp_map = ''
     " nnoremap <silent> <C-p> :Denite file_rec<CR>
