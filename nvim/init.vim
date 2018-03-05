@@ -39,6 +39,7 @@ let g:spacevim_enable_ale = 1
 call SpaceVim#layers#load('autocomplete')
 call SpaceVim#layers#load('checkers', { 'show_cursor_error': 0 })
 call SpaceVim#layers#load('ctrlp')
+call SpaceVim#layers#load('git')
 call SpaceVim#layers#load('github')
 call SpaceVim#layers#load('incsearch')
 call SpaceVim#layers#load('lang#c')
@@ -68,6 +69,9 @@ call SpaceVim#layers#load('tags')
 call SpaceVim#layers#load('tmux')
 call SpaceVim#layers#load('tools')
 " call SpaceVim#layers#load('tools#screensaver')
+
+call SpaceVim#layers#disable('chat')
+
 " let g:gutentags_ctags_executable = 'gtags'
 " let g:tagbar_ctags_bin = 'gtags'
 let g:spacevim_enable_vimfiler_welcome = 1
