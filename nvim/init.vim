@@ -72,6 +72,7 @@ call SpaceVim#layers#load('tags')
 call SpaceVim#layers#load('tmux')
 call SpaceVim#layers#load('tools')
 call SpaceVim#layers#load('unite')
+call SpaceVim#layers#load('VersionControl')
 
 call SpaceVim#layers#disable('chat')
 
