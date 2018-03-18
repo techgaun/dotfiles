@@ -110,6 +110,9 @@ let g:spacevim_disabled_plugins=[
         \ ['vimcn/vimcdoc'],
         \ ['junegunn/vim-emoji'],
         \ ['SpaceVim/LanguageClient-neovim'],
+        \ ['lymslive/vimloo'],
+        \ ['lymslive/vnote'],
+        \ ['wsdjeg/Mysql.vim']
     \ ]
 
 let g:spacevim_custom_plugins = [
