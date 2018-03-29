@@ -101,7 +101,7 @@ alias mrh="mix run --no-halt"
 alias mpr="mix phx.routes"
 
 # go stuff
-alias godoch="godoc -http=:4000"
+alias godoch="godoc -http=:5000"
 alias gb="go build -x"
 alias gr="go run -x"
 alias get="go get"
