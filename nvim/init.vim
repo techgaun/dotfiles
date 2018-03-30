@@ -114,7 +114,8 @@ let g:spacevim_disabled_plugins=[
         \ ['SpaceVim/LanguageClient-neovim'],
         \ ['lymslive/vimloo'],
         \ ['lymslive/vnote'],
-        \ ['wsdjeg/Mysql.vim']
+        \ ['wsdjeg/Mysql.vim'],
+        \ ['bbchung/Clamp']
     \ ]
 
 let g:spacevim_custom_plugins = [
