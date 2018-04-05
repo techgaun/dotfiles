@@ -3,8 +3,8 @@ hpsqlcopy() {
     echo "Usage: ${0} <dest_db> [src_db] [dest_db_url] [src_db_url]"
   else
     src_db="${2:-zego-core-stage}"
-    src_db_url="${3:-DATABASE_URL}"
-    dest_db_url="${4:-DATABASE_URL}"
+    dest_db_url="${3:-DATABASE_URL}"
+    src_db_url="${4:-DATABASE_URL}"
     heroku pg:copy "${src_db}::${src_db_url}" "${dest_db_url}" --app "${1}" --confirm "${1}"
   fi
 }
