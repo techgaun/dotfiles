@@ -32,6 +32,8 @@ alias acmsniff="interceptty -s 'ispeed 115200 ospeed 115200' /dev/ttyACM0 /tmp/t
 alias sysup="sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove"
 alias ytmp3="youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias src="apt source"
+alias msrw19="sudo wrmsr -a 0x19a 0x0"
+alias msrr19="sudo rdmsr -a 0x19a"
 
 # python
 alias venv="virtualenv --python=python3 venv"
