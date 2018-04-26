@@ -105,6 +105,8 @@ alias mpr="mix phx.routes"
 # elixir/hex
 alias mhs="mix hex.search"
 alias mhd="mix hex.docs open"
+alias mho="mix hex.outdated"
+alias mha="mix hex.audit"
 
 # go stuff
 alias godoch="godoc -http=:5000"
