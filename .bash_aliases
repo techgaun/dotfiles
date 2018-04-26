@@ -102,6 +102,10 @@ alias mtw="mix test --only wip"
 alias mrh="mix run --no-halt"
 alias mpr="mix phx.routes"
 
+# elixir/hex
+alias mhs="mix hex.search"
+alias mhd="mix hex.docs open"
+
 # go stuff
 alias godoch="godoc -http=:5000"
 alias gb="go build -x"
