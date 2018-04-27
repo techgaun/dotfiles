@@ -6,8 +6,11 @@ addons:
   apt:
     sources:
       - debian-sid
-    packages:
-      - shellcheck
+      - cabal-install
+
+before-script:
+  - 'cabal update'
+  - 'cabal install shellcheck'
 
 script:
   - bash -c 'shopt -s globstar; shellcheck -s bash **/*.sh .functions/*'
