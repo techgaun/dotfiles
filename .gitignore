@@ -29,3 +29,5 @@ tags.lock
 tags.temp
 *.coverdata
 tmp/
+.elixir_ls/
+node_modules/
