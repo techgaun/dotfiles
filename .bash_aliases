@@ -129,6 +129,9 @@ alias opensmbshares="nmap -T4 -v -oA shares --script smb-enum-shares --script-ar
 alias qvim="vim -n -u NONE -i NONE -n"
 alias qnvim="nvim -n -u NONE -i NONE -n"
 
+alias deadex="git ls-files lib | xargs ctags -f - | unused --stdin"
+alias deadcode="git ls-files | xargs ctags -f - | unused --stdin"
+
 if [[ -f "${HOME}/.bash_aliases_secret" ]]; then
   source ${HOME}/.bash_aliases_secret
 fi
