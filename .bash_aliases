@@ -98,9 +98,12 @@ alias mpn="mix phx.new"
 alias mps="mix phx.server"
 alias mer="mix ecto.reset"
 alias mch="mix coveralls.html"
-alias mtw="mix test --only wip"
+alias mtow="mix test --only wip"
 alias mrh="mix run --no-halt"
 alias mpr="mix phx.routes"
+alias mts="mix test --stale"
+alias mtw="mix test.watch"
+alias megm="mix ecto.gen.migration"
 
 # elixir/hex
 alias mhs="mix hex.search"
