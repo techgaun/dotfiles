@@ -127,6 +127,12 @@ alias rnios="react-native run-ios"
 alias rnland="react-native log-android"
 alias rnlios="react-native log-ios"
 
+# asdf stuff
+alias asdfu="asdf plugin-update --all"
+alias asdfl="asdf list-all"
+alias asdfi="asdf install"
+alias asdfg="asdf global"
+
 # hax0r stuff
 alias opensmbshares="nmap -T4 -v -oA shares --script smb-enum-shares --script-args smbuser=username,smbpass=password -p445"  # opensmbshares 192.168.0.0/24
 
