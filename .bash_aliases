@@ -106,6 +106,7 @@ alias mts="mix test --stale"
 alias mtw="mix test.watch"
 alias megm="mix ecto.gen.migration"
 alias mcw="mix compile --warnings-as-errors --all-warnings"
+alias mi="iex -S mix"
 
 # elixir/hex
 alias mhs="mix hex.search"
