@@ -110,7 +110,7 @@ alias mi="iex -S mix"
 
 # elixir/hex
 alias mhs="mix hex.search"
-alias mhd="mix hex.docs open"
+alias mhd="mix hex.docs online"
 alias mho="mix hex.outdated"
 alias mha="mix hex.audit"
 
