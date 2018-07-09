@@ -36,6 +36,8 @@ FORCE_SPACEVIMINSTALL=yup ./setup.sh
 - For `git diff`, I'm using [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) so make sure you have if you use this .gitconfig
 - Put your personal information for ssh on `~/.ssh/config.local`. This requires OpenSSH >= 7.3. See [Install Instruction](https://gist.github.com/techgaun/df66d37379df37838482c4c3470bc48e) for OpenSSH7.4 on Ubuntu 16.04
 - Put your private bash aliases on `~/.bash_aliases_secret`.
+- You can update [crontab](crontab) file and then run: `crontab crontab` to reload the crons.
+- If you wish you to update crontab from your own crontab, you can run: `crontab -l > crontab` in this repo.
 
 ## Directory Structure
 
