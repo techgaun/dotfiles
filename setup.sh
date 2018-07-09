@@ -12,6 +12,8 @@ fi
 
 [[ -L "${HOME}/.functions" ]] || ln -sf "${SRC_DIR}/.functions" "${HOME}/.functions"
 
+[[ -L "${HOME}/.custom-files" ]] || ln -sf "${SRC_DIR}/.custom-files" "${HOME}/.custom-files"
+
 [[ -f "${HOME}/.functions/tmuxinator.bash" ]] || wget 'https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.bash' -O "${HOME}/.functions/tmuxinator.bash"
 
 [[ -d "${NVIM_DIR}" ]] || mkdir -p "${NVIM_DIR}"
