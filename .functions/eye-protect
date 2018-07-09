@@ -1,0 +1,9 @@
+#!/bin/bash
+
+eye_20mins() {
+  /usr/bin/notify-send -i "${HOME}/.custom-files/eye_inv.ico" "20 - 20 - 20" "Time to take rest. Keep your eye safe :)"
+}
+
+eye_2hours() {
+  /usr/bin/notify-send -i "${HOME}/.custom-files/eye_inv.ico" "2 hrs eye rest" "Time to take rest for 2 minutes. Keep your eye safe :)"
+}
