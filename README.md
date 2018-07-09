@@ -35,3 +35,67 @@ FORCE_SPACEVIMINSTALL=yup ./setup.sh
 
 - For `git diff`, I'm using [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) so make sure you have if you use this .gitconfig
 - Put your personal information for ssh on `~/.ssh/config.local`. This requires OpenSSH >= 7.3. See [Install Instruction](https://gist.github.com/techgaun/df66d37379df37838482c4c3470bc48e) for OpenSSH7.4 on Ubuntu 16.04
+
+## Directory Structure
+
+```bash
+      1 .
+      2 ├── .custom-files
+      3 │   └── eye_inv.ico
+      4 ├── .functions
+      5 │   ├── codepoint
+      6 │   ├── colors
+      7 │   ├── extract
+      8 │   ├── gitignore
+      9 │   ├── gitpwn
+     10 │   ├── gogo
+     11 │   ├── golistdeps
+     12 │   ├── gostatic
+     13 │   ├── hccopy
+     14 │   ├── heroku-copy
+     15 │   ├── man
+     16 │   ├── mdview
+     17 │   ├── msgerr
+     18 │   ├── pylatest
+     19 │   ├── sslcert
+     20 │   ├── tmuxinator.bash
+     21 │   └── tre
+     22 ├── httpie
+     23 │   └── config.json
+     24 ├── nvim
+     25 │   ├── init-my.vim
+     26 │   ├── init.vim
+     27 │   ├── pyenv-setup.sh
+     28 │   └── pyvenv-setup.sh
+     29 ├── scripts
+     30 │   ├── diff-highlight
+     31 │   └── diff-so-fancy
+     32 ├── .ackrc
+     33 ├── .agignore
+     34 ├── .bash_aliases
+     35 ├── .bash_prompt
+     36 ├── .bashrc.defaults
+     37 ├── .ctags
+     38 ├── curl-timing.txt
+     39 ├── .editorconfig
+     40 ├── .gemrc
+     41 ├── .gitconfig
+     42 ├── .gitignore
+     43 ├── .globalrc
+     44 ├── .iex.exs
+     45 ├── .iftoprc
+     46 ├── LICENSE
+     47 ├── .mpd.conf
+     48 ├── .psqlrc
+     49 ├── .pythonrc.py
+     50 ├── README.md
+     51 ├── setup.sh
+     52 ├── ssh_config
+     53 ├── tags
+     54 ├── .tern-config
+     55 ├── .tigrc
+     56 ├── .tmux.conf
+     57 └── .travis.yml
+     58
+     59 5 directories, 51 files
+```
