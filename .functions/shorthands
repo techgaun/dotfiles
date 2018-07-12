@@ -8,7 +8,8 @@ md() {
 
 # List all files, long format, colorized, permissions in octal
 la(){
- 	ls -l  "$@" | awk '
+  # shellcheck disable=SC2012
+  ls -l  "$@" | awk '
     {
       k=0;
       for (i=0;i<=8;i++)
@@ -21,7 +22,7 @@ la(){
 
 # find shorthand
 f() {
-	find . -name "$1" 2>&1 | grep -v 'Permission denied'
+  find . -name "$1" 2>&1 | grep -v 'Permission denied'
 }
 
 # git commit browser. needs fzf
