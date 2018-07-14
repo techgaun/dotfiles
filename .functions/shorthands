@@ -22,11 +22,11 @@ la(){
 
 # find shorthand
 f() {
-  find . -name "$1" 2>&1 | grep -v 'Permission denied'
+  find . -iname "$1" 2>&1 | grep -v 'Permission denied'
 }
 
 fz() {
-  find . -name "*$1*" 2>&1 | grep -v 'Permission denied'
+  find . -iname "*$1*" 2>&1 | grep -v 'Permission denied'
 }
 
 # git commit browser. needs fzf
