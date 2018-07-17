@@ -74,7 +74,6 @@ call SpaceVim#layers#load('shell')
 call SpaceVim#layers#load('tags')
 call SpaceVim#layers#load('tmux')
 call SpaceVim#layers#load('tools')
-call SpaceVim#layers#load('unite')
 call SpaceVim#layers#load('VersionControl')
 
 call SpaceVim#layers#disable('chat')
@@ -96,6 +95,8 @@ let g:indentLine_char = '¦'
 " goyo settings
 let g:goyo_width = 110
 let g:goyo_height = '90%'
+
+let g:ctrlp_map = '<c-e>'
 
 " if has('python3')
     " let g:ctrlp_map = ''
