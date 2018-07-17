@@ -96,7 +96,7 @@ let g:indentLine_char = '¦'
 let g:goyo_width = 110
 let g:goyo_height = '90%'
 
-let g:ctrlp_map = '<c-e>'
+let g:ctrlp_map = '<c-i>'
 
 " if has('python3')
     " let g:ctrlp_map = ''
