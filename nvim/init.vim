@@ -41,8 +41,9 @@ call SpaceVim#layers#load('autocomplete')
 call SpaceVim#layers#load('checkers', { 'show_cursor_error': 0 })
 call SpaceVim#layers#load('colorscheme')
 call SpaceVim#layers#load('cscope')
-call SpaceVim#layers#load('ctrlp')
+" call SpaceVim#layers#load('ctrlp')
 call SpaceVim#layers#load('denite')
+" call SpaceVim#layers#load('fzf')
 call SpaceVim#layers#load('git')
 call SpaceVim#layers#load('github')
 call SpaceVim#layers#load('incsearch')
@@ -96,7 +97,7 @@ let g:indentLine_char = '¦'
 let g:goyo_width = 110
 let g:goyo_height = '90%'
 
-let g:ctrlp_map = '<c-i>'
+" let g:ctrlp_map = '<c-p>'
 
 " if has('python3')
     " let g:ctrlp_map = ''
