@@ -12,7 +12,9 @@
   b = branch
   c = clone --recursive --depth 50
   commend = commit --amend --no-edit --reset-author
-  cp = !git checkout -
+  cm = commit -m
+  cn = commit -n -m
+  cp = checkout -
   cc = checkout -- .
   fit = !git add -A && git commit -m \"$(curl -s http://whatthecommit.com/index.txt)\"
   fl = "!f() { git log --follow $1; }; f"
