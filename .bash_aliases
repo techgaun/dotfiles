@@ -151,8 +151,8 @@ alias asdfg="asdf global"
 # hax0r stuff
 alias opensmbshares="nmap -T4 -v -oA shares --script smb-enum-shares --script-args smbuser=username,smbpass=password -p445"  # opensmbshares 192.168.0.0/24
 
-alias qvim="vim -n -u NONE -i NONE -n"
-alias qnvim="nvim -n -u NONE -i NONE -n"
+alias qvim="MIX_ENV=test vim -n -u NONE -i NONE -n"
+alias qnvim="MIX_ENV=test nvim -n -u NONE -i NONE -n"
 
 alias deadex="git ls-files lib | xargs ctags -f - | unused --stdin"
 alias deadcode="git ls-files | xargs ctags -f - | unused --stdin"
@@ -165,5 +165,5 @@ ag=$(command -v ag)
 [[ "$?" -eq 0 ]] && alias ag="ag --path-to-ignore ~/.agignore"
 
 if type nvim &> /dev/null; then
-  alias vim="node -v && nvim"
+  alias vim="node -v && MIX_ENV=test nvim"
 fi
