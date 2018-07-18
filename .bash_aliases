@@ -14,9 +14,11 @@ alias desk="cd ~/Desktop"
 alias devices="cat /proc/devices"
 alias dir="dir --color=auto"
 alias docs="cd ~/Documents"
-alias dotfiles="cd ${HOME}/projects/personal/dotfiles"
+alias dotfiles='cd ${HOME}/projects/personal/dotfiles'
 alias fs="cat /proc/filesystems"
 alias genpasswd="strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr -d '\n'; echo"
+alias gpgls="gpg --list-secret-keys --keyid-format LONG"
+alias gpge="gpg --armor --export"
 alias gping="ping g.cn -c 2"
 alias h="history"
 alias j="jobs"
@@ -156,7 +158,7 @@ alias deadex="git ls-files lib | xargs ctags -f - | unused --stdin"
 alias deadcode="git ls-files | xargs ctags -f - | unused --stdin"
 
 if [[ -f "${HOME}/.bash_aliases_secret" ]]; then
-  source ${HOME}/.bash_aliases_secret
+  source "${HOME}/.bash_aliases_secret"
 fi
 
 ag=$(command -v ag)
