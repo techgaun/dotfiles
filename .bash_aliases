@@ -29,6 +29,7 @@ alias mirror="wget --mirror --page-requisites --adjust-extension --no-parent --c
 alias myip="curl ipinfo.io"
 alias mympd="mpd -v --no-daemon --stderr ~/.mpd.conf"
 alias nmrs="sudo /etc/init.d/network-manager restart"
+alias o="xdg-open"
 alias p="cd ~/projects"
 alias pipall="pip list --outdated | cut -d' ' -f1 | xargs pip install --upgrade"
 alias ppsql="PGPASSWORD=postgres psql -U postgres -W"
