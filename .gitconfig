@@ -9,6 +9,7 @@
   pager = diff-so-fancy | less --tabs=4 -RFX
 
 [alias]
+  a = add .
   b = branch
   c = clone --recursive --depth 50
   commend = commit --amend --no-edit --reset-author
