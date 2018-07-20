@@ -37,6 +37,7 @@ let g:spacevim_auto_disable_touchpad = 0
 let g:spacevim_enable_neomake = 0
 let g:spacevim_enable_ale = 1
 let g:ale_fix_on_save = 1
+let g:ale_lint_on_enter = 0
 
 let g:ale_fixers = {
 \   'javascript': ['eslint'],
