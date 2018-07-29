@@ -4,6 +4,7 @@ set softtabstop=2
 set shiftwidth=2
 set textwidth=120
 set nofoldenable
+set icm=split
 let g:spacevim_enable_guicolors = 0
 
 " let g:python_host_prog = '/home/techgaun/.pyenv/versions/neovim2/bin/python'
