@@ -309,3 +309,6 @@ let g:chromatica#libclang_path = '/usr/lib/x86_64-linux-gnu/libclang-4.0.so.1'
 "     \ 'whitelist': ['elixir', 'eelixir'],
 "     \ })
 " augroup END
+
+imap <C-b> @tag :wipa
+nnoremap ,b O@tag :wipa<esc>
