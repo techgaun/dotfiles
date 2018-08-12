@@ -131,6 +131,12 @@ alias mhd="mix hex.docs online"
 alias mho="mix hex.outdated"
 alias mha="mix hex.audit"
 
+# elixir/xref
+alias mxu="mix xref unreachable"
+alias mxd="mix xref deprecated"
+alias mxc="mix xref callers"
+alias mxg="mix xref graph"
+
 # go stuff
 alias godoch="godoc -http=:5000"
 alias gb="go build -x"
