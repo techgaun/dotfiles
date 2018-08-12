@@ -136,6 +136,7 @@ alias mxu="mix xref unreachable"
 alias mxd="mix xref deprecated"
 alias mxc="mix xref callers"
 alias mxg="mix xref graph"
+alias mxgd="mix format graph --format dot"
 
 # go stuff
 alias godoch="godoc -http=:5000"
