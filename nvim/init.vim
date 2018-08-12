@@ -311,4 +311,5 @@ let g:chromatica#libclang_path = '/usr/lib/x86_64-linux-gnu/libclang-4.0.so.1'
 " augroup END
 
 imap <C-b> @tag :wipa
+imap <C-x> require IEx; IEx.pry
 nnoremap ,b O@tag :wipa<esc>
