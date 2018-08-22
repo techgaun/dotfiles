@@ -25,3 +25,7 @@ IEx.configure(
 )
 
 import_file_if_available(".secret.exs")
+
+rs = fn ->
+  Process.exit(self(), :normal)
+end
