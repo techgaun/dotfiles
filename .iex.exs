@@ -21,7 +21,16 @@ IEx.configure(
   alive_prompt: "%prefix(%node):%counter>",
   default_prompt: "%prefix:%counter>",
   inspect: [pretty: true, char_lists: :as_lists, limit: :infinity],
-  history_size: -1
+  history_size: -1,
+  colors: [
+    ls_directory: :cyan,
+    ls_device: :yellow,
+    doc_code: :green,
+    doc_inline_code: :magenta,
+    doc_headings: [:cyan, :underline],
+    doc_title: [:cyan, :bright, :underline],
+    eval_result: [ :cyan, :bright ]
+  ]
 )
 
 import_file_if_available(".secret.exs")
