@@ -20,7 +20,7 @@ IO.puts """
 IEx.configure(
   alive_prompt: "%prefix(%node):%counter>",
   default_prompt: "%prefix:%counter>",
-  inspect: [pretty: true, char_lists: :as_lists],
+  inspect: [pretty: true, char_lists: :as_lists, limit: :infinity],
   history_size: -1
 )
 
