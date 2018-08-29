@@ -7,5 +7,5 @@ churl() {
 }
 
 churlf() {
-  cat "${1}" | xargs -I {} -P 4 sh -c timeout 25s chromium-browser –headless –no-sandbox –user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537. 36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36' –dump-dom https://{} 2> /dev/null > {}.html
+  xargs -I {} -P 4 sh -c timeout 25s chromium-browser –headless –no-sandbox –user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537. 36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36' –dump-dom https://{} 2> /dev/null > {}.html < "${1}"
 }
