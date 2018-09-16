@@ -27,7 +27,17 @@ GTAGS
 tags
 tags.lock
 tags.temp
+
+# elixir specific
 *.coverdata
 tmp/
 .elixir_ls/
+
+# node
 node_modules/
+
+*.out
+*.exe
+*.test
+*.prof
+*.deb
