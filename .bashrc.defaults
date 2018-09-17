@@ -24,7 +24,7 @@ fi
 export ANDROID_HOME="${HOME}/Android/Sdk"
 export PATH="${HOME}/.bin:${HOME}/.asdf/installs/elixir/1.4.0/.mix/escripts:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}:${HOME}/tools/buck/bin"
 export PATH="${HOME}/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:${PATH}"
-export PATH="${PATH}:${HOME}/android-studio/bin"
+export PATH="${PATH}:${HOME}/android-studio/bin:${HOME}/.yarn/bin"
 export EDITOR="vim"
 export ELIXIR_EDITOR="vim +__LINE__ __FILE__"
 export REACT_EDITOR="vim"
