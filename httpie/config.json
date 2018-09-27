@@ -10,6 +10,7 @@
     "--pretty=all",
     "--follow",
     "--timeout=60",
-    "--max-redirects=15"
+    "--max-redirects=15",
+    "--default-scheme=https"
   ]
 }
