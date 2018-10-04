@@ -17,6 +17,7 @@
   cn = commit -n -m
   cp = checkout -
   cc = checkout -- .
+  f = fetch
   fit = !git add -A && git commit -m \"$(curl -s http://whatthecommit.com/index.txt)\"
   fnit = !git add -A && git commit -n -m \"$(curl -s http://whatthecommit.com/index.txt)\"
   fl = "!f() { git log --follow $1; }; f"
