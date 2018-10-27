@@ -1,6 +1,6 @@
 # dotfiles [![Build Status](https://travis-ci.org/techgaun/dotfiles.svg?branch=master)](https://travis-ci.org/techgaun/dotfiles)
 
-> My dotfiles revamped
+> My dotfiles
 
 This dotfiles repo is what I use to setup my systems.
 
@@ -11,7 +11,6 @@ This dotfiles repo is what I use to setup my systems.
 
 ## Whats in here
 
-- ~~vim configurations that I use along with [spf13-vim](https://github.com/techgaun/spf13-vim)~~
 - vim configurations that I use along with SpaceVim and Neovim
 - tmux configuration
 - bash aliases
@@ -21,6 +20,7 @@ This dotfiles repo is what I use to setup my systems.
 - httpie configuration
 - my [bash functions](.functions)
 - ssh config
+- rest of the awesomeness that I might not have remembered to document here
 
 ## Reinstall vim
 
