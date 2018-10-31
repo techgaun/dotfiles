@@ -111,6 +111,7 @@ alias hrs="heroku restart --app"
 
 # elixir/mix
 alias m="mix"
+alias mdg="mix deps.get"
 alias mn="mix new"
 alias mpn="mix phx.new"
 alias mps="mix phx.server"
