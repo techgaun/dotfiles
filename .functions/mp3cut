@@ -1,0 +1,4 @@
+# usage: mp3cut 00:00:07 00:03:50 some-music-file.mp3 output.mp3
+mp3cut() {
+  ffmpeg -i "${3}" -ss "${1}" -t "${2}" -acodec copy "${4}"
+}
