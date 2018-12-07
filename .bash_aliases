@@ -176,6 +176,9 @@ fi
 ag=$(command -v ag)
 [[ "$?" -eq 0 ]] && alias ag="ag --path-to-ignore ~/.agignore"
 
+exa=$(command -v exa)
+[[ "$?" -eq 0 ]] && alias ls="exa -ax --color=auto"
+
 if type nvim &> /dev/null; then
   alias vim="node -v && MIX_ENV=test nvim"
 fi
