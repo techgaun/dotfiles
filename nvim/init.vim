@@ -140,7 +140,8 @@ let g:spacevim_custom_plugins = [
         \ ['tpope/vim-eunuch'],
         \ ['junegunn/fzf.vim'],
         \ ['prettier/vim-prettier', {'on_ft': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'], 'build': 'yarn install'}],
-        \ ['lifepillar/pgsql.vim', {'on_ft': ['sql']}]
+        \ ['lifepillar/pgsql.vim', {'on_ft': ['sql']}],
+        \ ['metakirby5/codi.vim']
     \ ]
 
 augroup NERDCommenter
