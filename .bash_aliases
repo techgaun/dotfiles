@@ -99,6 +99,7 @@ alias mdkir="mkdir"
 # heroku
 alias hl="heroku login --sso"
 alias hpsql="heroku psql --app"
+alias hpgcli="heroku pgcli --app"
 alias hbash="heroku run bash --app"
 alias hmaint="heroku maintenance:on --app"
 alias hmaintoff="heroku maintenance:off --app"
