@@ -46,6 +46,7 @@ alias sysup="sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove"
 alias turnoff="sudo poweroff"
 alias v="vim"
 alias ytmp3="youtube-dl -x --audio-format mp3 --audio-quality 0"
+alias sst="ss -tunapl"
 
 # this fixes issue with high CPU usage after laptop is woken up from sleep
 alias msrw19="sudo wrmsr -a 0x19a 0x0"
