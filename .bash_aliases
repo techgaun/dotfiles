@@ -93,6 +93,8 @@ alias yr="yarn remove"
 # git
 alias g="git"
 alias gcm="git checkout master"
+# pull operation on all folders with dir
+alias gpullall='for i in *; do if [[ -d "$i" && -d "${i}/.git" ]]; then git -C "${i}" pull; fi; done'
 
 # bad spellings
 alias sl="ls"
