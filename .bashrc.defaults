@@ -62,6 +62,10 @@ export DISABLE_FILE_OPEN_ON_NAV=1
 # thefuck config
 eval "$(thefuck --alias)"
 
+# tf completion
+tf=$(command -v terraform)
+[[ "$?" -eq 0 ]] && complete -C /usr/local/bin/terraform tf
+
 source "${HOME}/.bash_prompt"
 
 for f in ${HOME}/.functions/*; do
