@@ -244,7 +244,7 @@ let g:tagbar_type_markdown = {
         \ 'i:Heading_L2',
         \ 'k:Heading_L3'
     \ ]
-    \ }
+  \ }
 
 let g:tagbar_type_puppet = {
     \ 'ctagstype': 'puppet',
@@ -254,7 +254,7 @@ let g:tagbar_type_puppet = {
         \'n:node',
         \'d:definition'
       \]
-    \}
+  \}
 
 let g:tagbar_type_ruby = {
     \ 'kinds' : [
@@ -265,7 +265,7 @@ let g:tagbar_type_ruby = {
         \ 'f:methods',
         \ 'F:singleton methods'
     \ ]
-    \ }
+  \ }
 
 let g:tagbar_type_rust = {
     \ 'ctagstype' : 'rust',
@@ -279,7 +279,7 @@ let g:tagbar_type_rust = {
         \'t:traits',
         \'i:impls,trait implementations',
     \]
-    \}
+  \}
 
 let g:tagbar_type_typescript = {
   \ 'ctagstype': 'typescript',
@@ -296,18 +296,21 @@ let g:tagbar_type_typescript = {
   \ }
 
 let g:vimfiler_ignore_pattern = get(g:, 'vimfiler_ignore_pattern', [
-      \ '^\.git$',
-      \ '^\.DS_Store$',
-      \ '^\.init\.vim-rplugin\~$',
-      \ '^\.netrwhist$',
-      \ '\.class$',
-      \])
+    \ '^\.git$',
+    \ '^\.DS_Store$',
+    \ '^\.init\.vim-rplugin\~$',
+    \ '^\.netrwhist$',
+    \ '\.class$',
+  \ ])
 
 let g:chromatica#libclang_path = '/usr/lib/x86_64-linux-gnu/libclang-4.0.so.1'
 
 " terraform configs
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
+" call deoplete#custom#option('omni_patterns', {
+"     \ 'terraform': '[^ *\t"{=$]\w*',
+"   \})
 
 " https://github.com/JakeBecker/elixir-ls/issues/35#issuecomment-351522003
 " augroup elixir_lsp
