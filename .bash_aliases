@@ -174,8 +174,12 @@ alias tfi="terraform init"
 # hax0r stuff
 alias opensmbshares="nmap -T4 -v -oA shares --script smb-enum-shares --script-args smbuser=username,smbpass=password -p445"  # opensmbshares 192.168.0.0/24
 
+# vim
 alias qvim="MIX_ENV=test vim -n -u NONE -i NONE -n"
 alias qnvim="MIX_ENV=test nvim -n -u NONE -i NONE -n"
+
+# tmux
+alias tmls="tmux lsk"   # list all tmux key bindings
 
 alias deadex="git ls-files lib | xargs ctags -f - | unused --stdin"
 alias deadcode="git ls-files | xargs ctags -f - | unused --stdin"
