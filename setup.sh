@@ -59,6 +59,6 @@ fi
 
 [[ ! -e "${HOME}/.bin" ]] && mkdir "${HOME}/.bin"
 
-for f in ${SRC_DIR}/scripts/*; do
+for f in "${SRC_DIR}"/scripts/*; do
   ln -sf "$f" "${HOME}/.bin/"
 done

