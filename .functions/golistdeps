@@ -1,6 +1,6 @@
 golistdeps(){
   (
-  if [[ ! -z "$1" ]]; then
+  if [[ -n "$1" ]]; then
     gogo "$@"
   fi
 
