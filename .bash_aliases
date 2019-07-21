@@ -171,6 +171,9 @@ alias tf="terraform"
 alias tfp="terraform plan"
 alias tfi="terraform init"
 
+# dpkg & others
+alias pkgs="dpkg --status"
+
 # hax0r stuff
 alias opensmbshares="nmap -T4 -v -oA shares --script smb-enum-shares --script-args smbuser=username,smbpass=password -p445"  # opensmbshares 192.168.0.0/24
 
