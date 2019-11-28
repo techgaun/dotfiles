@@ -59,6 +59,9 @@ export NNN_SHOW_HIDDEN=1
 export NNN_USE_EDITOR=1
 export DISABLE_FILE_OPEN_ON_NAV=1
 
+# kubernetes
+complete -F __start_kubectl k
+
 # thefuck config
 eval "$(thefuck --alias)"
 

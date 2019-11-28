@@ -170,6 +170,9 @@ alias asdfl="asdf list-all"
 alias asdfi="asdf install"
 alias asdfg="asdf global"
 
+# kubernetes stuff
+alias k="kubectl"
+
 # terraform
 alias tf="terraform"
 alias tfp="terraform plan"
