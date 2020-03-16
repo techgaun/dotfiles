@@ -325,3 +325,5 @@ let g:terraform_fmt_on_save=1
 imap <C-b> @tag :wipa
 imap <C-x> require IEx; IEx.pry
 nnoremap ,b O@tag :wipa<esc>
+
+let g:prettier#autoformat_require_pragma = 0
