@@ -1,9 +1,9 @@
-language: bash
-
-sudo: false
+language: shell
+os: linux
+dist: bionic
 
 script:
   - bash -c 'shopt -s globstar; shellcheck -s bash **/*.sh .functions/*'
 
-matrix:
+jobs:
   fast_finish: true
