@@ -2,16 +2,6 @@ language: bash
 
 sudo: false
 
-addons:
-  apt:
-    sources:
-      - debian-sid
-      - cabal-install
-
-before-script:
-  - 'cabal update'
-  - 'cabal install shellcheck'
-
 script:
   - bash -c 'shopt -s globstar; shellcheck -s bash **/*.sh .functions/*'
 
