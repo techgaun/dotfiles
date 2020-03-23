@@ -2,7 +2,7 @@
   "__meta__": {
     "about": "techgaun's HTTPie configuration file",
     "help": "https://httpie.org/docs#config",
-    "httpie": "0.9.9"
+    "httpie": "1.0.3"
   },
   "default_options": [
     "--style=solarized",
