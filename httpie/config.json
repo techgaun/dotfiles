@@ -1,16 +1,16 @@
 {
-  "__meta__": {
-    "about": "techgaun's HTTPie configuration file",
-    "help": "https://httpie.org/docs#config",
-    "httpie": "1.0.3"
-  },
-  "default_options": [
-    "--style=solarized",
-    "--verbose",
-    "--pretty=all",
-    "--follow",
-    "--timeout=60",
-    "--max-redirects=15",
-    "--default-scheme=https"
-  ]
+    "__meta__": {
+        "about": "HTTPie configuration file",
+        "help": "https://httpie.org/doc#config",
+        "httpie": "1.0.3"
+    },
+    "default_options": [
+        "--style=solarized",
+        "--verbose",
+        "--pretty=all",
+        "--follow",
+        "--timeout=60",
+        "--max-redirects=15",
+        "--default-scheme=https"
+    ]
 }

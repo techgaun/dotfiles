@@ -62,7 +62,7 @@
   newNormal = green bold
   newHighlight = green bold 22
 [color "diff"]
-  meta = yellow
+  meta = 11
   frag = magenta bold
   commit = yellow bold
   old = red bold
@@ -70,3 +70,5 @@
   whitespace = red reverse
 [color]
   ui = true
+[icdiff]
+  options = --highlight --line-numbers
