@@ -156,6 +156,8 @@ alias gr="go run -x"
 alias get="go get"
 alias getu="go get -u"
 alias goproj="cd ~/projects/go"
+alias god="go doc" # eg. go doc runtime Version
+alias gods="go doc -src" # eg. go doc -src runtime Version
 
 # react/react-native stuff
 alias rn="react-native"
