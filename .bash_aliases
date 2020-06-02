@@ -207,7 +207,10 @@ exa=$(command -v exa)
 [[ "$?" -eq 0 ]] && alias ls="exa --long --header --git"
 
 bat=$(command -v bat)
-[[ "$?" -eq 0 ]] && alias cat="bat"
+if [[ "$?" -eq 0 ]]; then
+  alias cat="bat"
+  alias catp="bat --style=plain --paging=never --tabs 0"
+fi
 
 if type nvim &> /dev/null; then
   alias vim="node -v && MIX_ENV=test nvim"
