@@ -172,6 +172,9 @@ alias asdfl="asdf list-all"
 alias asdfi="asdf install"
 alias asdfg="asdf global"
 
+# docker stuff
+alias dlint="docker run --rm -i hadolint/hadolint"
+
 # kubernetes stuff
 alias k="kubectl"
 
