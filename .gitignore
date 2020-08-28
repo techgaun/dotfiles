@@ -41,3 +41,6 @@ node_modules/
 *.test
 *.prof
 *.deb
+
+# my custom command
+tgcmd
