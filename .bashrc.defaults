@@ -53,6 +53,9 @@ export NVM_DIR="${HOME}/.nvm"
 alias node='unalias node ; unalias npm ; nvm use default ; node $@'
 alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
 
+# dotnetcore optout
+export DOTNET_CLI_TELEMETRY_OPTOUT="true"
+
 # nnn config
 export NNN_TMPFILE="/tmp/nnn"
 export NNN_SHOW_HIDDEN=1
