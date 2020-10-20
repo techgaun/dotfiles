@@ -1,3 +1,4 @@
 gfd() {
+  # shellcheck disable=SC2016
   git diff "${@}" --name-only | fzf -m --ansi --preview 'git diff "${@}" --color=always -- {-1}'
 }
