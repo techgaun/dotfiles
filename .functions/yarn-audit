@@ -1,0 +1,6 @@
+yarnaudit() {
+  npm i --package-lock-only
+  npm audit fix
+  rm -f yarn.lock && yarn import
+  rm -f package-lock.json
+}
