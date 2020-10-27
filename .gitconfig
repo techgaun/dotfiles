@@ -6,7 +6,8 @@
 [core]
   editor = nvim
   excludesfile = ~/.gitignore
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = delta --dark --theme="1337"
+  ; pager = diff-so-fancy | less --tabs=4 -RFX
 
 [alias]
   a = add .
@@ -56,11 +57,13 @@
 
 [pull]
   rebase = true
+
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
   newNormal = green bold
   newHighlight = green bold 22
+
 [color "diff"]
   meta = 11
   frag = magenta bold
@@ -68,10 +71,34 @@
   old = red bold
   new = green bold
   whitespace = red reverse
+
 [color]
   ui = true
+
 [icdiff]
   options = --highlight --line-numbers
+
 [merge "npm-merge-driver"]
-	name = automatically merge npm lockfiles
-	driver = npx npm-merge-driver merge %A %O %B %P
+  name = automatically merge npm lockfiles
+  driver = npx npm-merge-driver merge %A %O %B %P
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  features = side-by-side line-numbers decorations
+  syntax-theme = 1337
+  plus-style = syntax "#003800"
+  minus-style = syntax "#3f0001"
+
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+  hunk-header-decoration-style = cyan box ul
+
+[delta "line-numbers"]
+  line-numbers-left-style = cyan
+  line-numbers-right-style = cyan
+  line-numbers-minus-style = 124
+  line-numbers-plus-style = 28
