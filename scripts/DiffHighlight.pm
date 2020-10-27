@@ -11,16 +11,18 @@ my $NULL = File::Spec->devnull();
 
 # Highlight by reversing foreground and background. You could do
 # other things like bold or underline if you prefer.
-my @OLD_HIGHLIGHT = (
-	color_config('color.diff-highlight.oldnormal'),
-	color_config('color.diff-highlight.oldhighlight', "\x1b[7m"),
-	color_config('color.diff-highlight.oldreset', "\x1b[27m")
+our @OLD_HIGHLIGHT = (
+	color_config('color.diff-highlight.oldnormal',    "\e[1;31m"),
+	color_config('color.diff-highlight.oldhighlight', "\e[1;31;48;5;52m"),
+	"\x1b[27m",
 );
-my @NEW_HIGHLIGHT = (
-	color_config('color.diff-highlight.newnormal', $OLD_HIGHLIGHT[0]),
-	color_config('color.diff-highlight.newhighlight', $OLD_HIGHLIGHT[1]),
-	color_config('color.diff-highlight.newreset', $OLD_HIGHLIGHT[2])
+our @NEW_HIGHLIGHT = (
+	color_config('color.diff-highlight.newnormal',    "\e[1;32m"),
+	color_config('color.diff-highlight.newhighlight', "\e[1;32;48;5;22m"),
+	$OLD_HIGHLIGHT[2],
 );
+
+
 
 my $RESET = "\x1b[m";
 my $COLOR = qr/\x1b\[[0-9;]*m/;
@@ -72,7 +74,7 @@ sub handle_line {
 	      (?:$COLOR?\|$COLOR?[ ])* # zero or more trailing "|"
 	                         [ ]*  # trailing whitespace for merges
 	    /x) {
-		my $graph_prefix = $&;
+	        my $graph_prefix = $&;
 
 		# We must flush before setting graph indent, since the
 		# new commit may be indented differently from what we
