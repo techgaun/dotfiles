@@ -10,6 +10,8 @@ fi
 
 [[ ! -e "${HOME}/.httpie" ]] && mkdir "${HOME}/.httpie"
 
+[[ ! -e "${HOME}/.ssh" ]] && mkdir "${HOME}/.ssh"
+
 [[ -L "${HOME}/.functions" ]] || ln -sf "${SRC_DIR}/.functions" "${HOME}/.functions"
 
 [[ -L "${HOME}/.custom-files" ]] || ln -sf "${SRC_DIR}/.custom-files" "${HOME}/.custom-files"
