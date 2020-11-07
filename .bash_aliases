@@ -1,4 +1,4 @@
-unalias la
+unalias la 2> /dev/null
 
 alias ..2="cd ../.."
 alias ..3="cd ../../.."
