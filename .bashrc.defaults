@@ -1,4 +1,6 @@
-# hitory stuff
+# shellcheck shell=bash
+
+# history stuff
 HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=4000
@@ -93,7 +95,7 @@ command -v eksctl &> /dev/null && source <(eksctl completion bash)
 
 command -v thefuck &> /dev/null && eval "$(thefuck --alias)"
 
-command -v asdf &> /dev/null && source $HOME/.asdf/asdf.sh && source $HOME/.asdf/completions/asdf.bash
+command -v asdf &> /dev/null && source "${HOME}"/.asdf/asdf.sh && source "${HOME}"/.asdf/completions/asdf.bash
 
 for f in ${HOME}/.functions/*; do
   source $f
