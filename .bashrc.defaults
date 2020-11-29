@@ -64,14 +64,25 @@ export BAT_PAGER="less -R --mouse"
 # kubernetes
 complete -F __start_kubectl k
 
-# thefuck config
-eval "$(thefuck --alias)"
-
 # tf completion
 tf=$(command -v terraform)
 [[ "$?" -eq 0 ]] && complete -C /usr/local/bin/terraform tf
 
 source "${HOME}/.bash_prompt"
+
+# concourse fly
+command -v fly &> /dev/null && source <(fly completion --shell bash)
+
+# starship.rs
+command -v starship &> /dev/null && eval "$(starship init bash)"
+
+command -v eksctl &> /dev/null && source <(eksctl completion bash)
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+command -v thefuck &> /dev/null && eval "$(thefuck --alias)"
+
+command -v asdf &> /dev/null && source $HOME/.asdf/asdf.sh && source $HOME/.asdf/completions/asdf.bash
 
 for f in ${HOME}/.functions/*; do
   source $f
