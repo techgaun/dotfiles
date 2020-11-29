@@ -12,6 +12,8 @@ fi
 
 [[ ! -e "${HOME}/.ssh" ]] && mkdir "${HOME}/.ssh"
 
+[[ ! -e "${HOME}/.config" ]] && mkdir "${HOME}/.config"
+
 [[ -L "${HOME}/.functions" ]] || ln -sf "${SRC_DIR}/.functions" "${HOME}/.functions"
 
 [[ -L "${HOME}/.custom-files" ]] || ln -sf "${SRC_DIR}/.custom-files" "${HOME}/.custom-files"
@@ -48,6 +50,7 @@ ln -sf "${SRC_DIR}/.psqlrc" "${HOME}/.psqlrc"
 ln -sf "${SRC_DIR}/.pgclirc" "${HOME}/.pgclirc"
 ln -sf "${SRC_DIR}/.pythonrc.py" "${HOME}/.pythonrc.py"
 ln -sf "${SRC_DIR}/ssh_config" "${HOME}/.ssh/config"
+ln -sf "${SRC_DIR}/starship.toml" "${HOME}/.config/starship.toml"
 ln -sf "${SRC_DIR}/.tern-config" "${HOME}/.tern-config"
 ln -sf "${SRC_DIR}/.tigrc" "${HOME}/.tigrc"
 ln -sf "${SRC_DIR}/.tmux.conf" "${HOME}/.tmux.conf"
