@@ -2,3 +2,42 @@ add_newline = false
 
 [character]
 success_symbol = "[➜](bold green)"
+error_symbol = "[✖](bold red) "
+
+[time]
+disabled = false
+
+[hostname]
+disabled = false
+ssh_only = false
+format = "💻️ [$hostname]($style) in "
+style = "bold italic #87A752"
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[cmd_duration]
+min_time = 10_000  # cmd > 10s would show up
+format = " took [$duration]($style) "
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+
+[memory_usage]
+format = "$symbol[${ram}( | ${swap})]($style) "
+show_percentage = true
+show_swap = true
+threshold = 50
+style = "bold dimmed white"
+disabled = false
+
+[status]
+disabled = false
+format = "cmd failed [$symbol $status]($style)"
