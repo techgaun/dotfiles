@@ -74,7 +74,18 @@ source "${HOME}/.bash_prompt"
 command -v fly &> /dev/null && source <(fly completion --shell bash)
 
 # starship.rs
-command -v starship &> /dev/null && eval "$(starship init bash)"
+function set_term_title() {
+  case $TERM in
+    screen*|ansi*|xterm*|rxvt*)
+      echo -ne "\033]0;${USER}@${HOSTNAME%%.*}: ${PWD/#$HOME/\~}\007"
+    ;;
+  esac
+}
+
+if command -v starship &> /dev/null; then
+  starship_precmd_user_func="set_term_title"
+  eval "$(starship init bash)"
+fi
 
 command -v eksctl &> /dev/null && source <(eksctl completion bash)
 
