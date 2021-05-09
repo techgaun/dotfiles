@@ -96,7 +96,6 @@ call SpaceVim#layers#disable('chat')
 " let g:tagbar_ctags_bin = 'gtags'
 let g:spacevim_enable_vimfiler_welcome = 1
 let g:spacevim_enable_debug = 0
-let g:deoplete#auto_complete_delay = 150
 let g:spacevim_enable_tabline_filetype_icon = 1
 let g:spacevim_enable_os_fileformat_icon = 1
 let g:spacevim_buffer_index_type = 1
