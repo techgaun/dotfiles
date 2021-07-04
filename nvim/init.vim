@@ -100,7 +100,6 @@ let g:spacevim_enable_tabline_filetype_icon = 1
 let g:spacevim_enable_os_fileformat_icon = 1
 let g:spacevim_buffer_index_type = 1
 let g:neomake_vim_enabled_makers = ['vint']
-let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
 let g:vim_json_syntax_conceal = 0
 let g:indentLine_color_term = 130
 let g:indentLine_char = '¦'
