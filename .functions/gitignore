@@ -1,3 +1,4 @@
+# examples: gi node,python
 gi() {
-  curl -s "https://www.gitignore.io/api/$*" | sed -E '/#.*(Created by|End of|ERROR|Edit at)/d' | cat -s
+  curl -s "https://www.toptal.com/developers/gitignore/api/$*" | sed -E '/#.*(Created by|End of|ERROR|Edit at)/d' | cat -s
 }
