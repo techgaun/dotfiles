@@ -33,8 +33,6 @@ style = "bold white"
 
 [memory_usage]
 format = "$symbol[${ram}( | ${swap})]($style) "
-show_percentage = true
-show_swap = true
 threshold = 50
 style = "bold dimmed white"
 disabled = false
