@@ -47,6 +47,9 @@
 [commit]
   gpgsign = true
 
+[diff]
+  colorMoved = default
+
 [diff "bin"]
   textconv = hexdump -v -C
 
@@ -92,6 +95,7 @@
   syntax-theme = 1337
   plus-style = syntax "#003800"
   minus-style = syntax "#3f0001"
+  map-styles = bold purple => syntax magenta, bold cyan => syntax blue
 
 [delta "decorations"]
   commit-decoration-style = bold yellow box ul
