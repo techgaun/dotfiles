@@ -15,6 +15,7 @@ format = "💻️ [$hostname]($style) in "
 style = "bold italic #87A752"
 
 [battery]
+disabled = false
 full_symbol = "🔋"
 charging_symbol = "🔌"
 discharging_symbol = "⚡"
