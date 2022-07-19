@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-shopt -s nullglob
-
 if [[ -d "${HOME}/.bash_completion.d" ]]; then
-  for bcfile in "${HOME}/.bash_completion.d/"* ; do
+  for bcfile in $(find "${HOME}/.bash_completion.d/" -type f) ; do
     source $bcfile
   done
 fi
