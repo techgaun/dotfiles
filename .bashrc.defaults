@@ -101,3 +101,5 @@ command -v asdf &> /dev/null && source "${HOME}"/.asdf/asdf.sh && source "${HOME
 for f in ${HOME}/.functions/*; do
   source $f
 done
+
+source "${HOME}/.bash_completion"
