@@ -6,7 +6,7 @@
 [core]
   editor = nvim
   excludesfile = ~/.gitignore
-  pager = delta --dark --theme="1337"
+  pager = delta --dark --hyperlinks
   ; pager = diff-so-fancy | less --tabs=4 -RFX
 
 [alias]
@@ -86,7 +86,9 @@
   diffFilter = delta --color-only
 
 [delta]
-  features = side-by-side line-numbers decorations
+  side-by-side = true
+  line-numbers = true
+  decorations = true
   syntax-theme = 1337
   plus-style = syntax "#003800"
   minus-style = syntax "#3f0001"
