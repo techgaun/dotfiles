@@ -32,6 +32,7 @@ fi
 ln -sf "${SRC_DIR}/.ackrc" "${HOME}/.ackrc"
 ln -sf "${SRC_DIR}/.agignore" "${HOME}/.agignore"
 ln -sf "${SRC_DIR}/.bash_aliases" "${HOME}/.bash_aliases"
+ln -sf "${SRC_DIR}/.bash_completion" "${HOME}/.bash_completion"
 ln -sf "${SRC_DIR}/.bash_prompt" "${HOME}/.bash_prompt"
 ln -sf "${SRC_DIR}/.bashrc.defaults" "${HOME}/.bashrc.defaults"
 ln -sf "${SRC_DIR}/curl-timing.txt" "${HOME}/.curl-timing.txt"
