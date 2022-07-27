@@ -1,5 +1,13 @@
 # shellcheck shell=bash
 
+is_mac() {
+  if [[ $OSTYPE == "darwin"* ]]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
 # history stuff
 HISTCONTROL=ignoreboth
 shopt -s histappend
@@ -15,10 +23,19 @@ shopt -s globstar
 
 # git is aliased to g so need to setup completion
 
-git_compl="/usr/share/bash-completion/completions/git"
-if [[ -f "${git_compl}" ]]; then
-  source "${git_compl}"
-  __git_complete g __git_main
+setup_g_completion() {
+  git_compl="${1}"
+  
+  if [[ -f "${git_compl}" ]]; then
+    source "${git_compl}"
+    __git_complete g __git_main
+  fi
+}
+
+if is_mac; then
+  setup_g_completion "/usr/local/etc/bash_completion.d/git-completion.bash"
+else
+  setup_g_completion "/usr/share/bash-completion/completions/git"
 fi
 
 # paths and other exports
