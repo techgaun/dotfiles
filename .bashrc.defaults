@@ -1,11 +1,7 @@
 # shellcheck shell=bash
 
 is_mac() {
-  if [[ $OSTYPE == "darwin"* ]]; then
-    return 0
-  else
-    return 1
-  fi
+  [ $(uname) == "Darwin" ]
 }
 
 # history stuff
@@ -25,7 +21,7 @@ shopt -s globstar
 
 setup_g_completion() {
   git_compl="${1}"
-  
+
   if [[ -f "${git_compl}" ]]; then
     source "${git_compl}"
     __git_complete g __git_main
