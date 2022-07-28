@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source .functions/is_mac
+
 SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 NVIM_DIR="${HOME}/.config/nvim"
 SPACEVIM_DIR="${HOME}/.SpaceVim.d"
@@ -55,6 +57,10 @@ ln -sf "${SRC_DIR}/starship.toml" "${HOME}/.config/starship.toml"
 ln -sf "${SRC_DIR}/.tern-config" "${HOME}/.tern-config"
 ln -sf "${SRC_DIR}/.tigrc" "${HOME}/.tigrc"
 ln -sf "${SRC_DIR}/.tmux.conf" "${HOME}/.tmux.conf"
+
+if is_mac; then
+  ln -sf "${SRC_DIR}/Brewfile" "${HOME}/Brewfile"
+fi
 
 # update perms wherever necessary
 chmod 600 ~/.ssh/config
