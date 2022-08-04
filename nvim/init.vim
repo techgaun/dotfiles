@@ -4,7 +4,7 @@ set softtabstop=2
 set shiftwidth=2
 set textwidth=120
 set nofoldenable
-set icm=split
+" set icm=split
 set wrap
 let g:spacevim_enable_guicolors = 0
 
