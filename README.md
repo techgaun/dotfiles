@@ -20,6 +20,7 @@ This dotfiles repo is what I use to setup my systems.
 - httpie configuration
 - my [bash functions](.functions)
 - ssh config
+- Brewfile (run `brew bundle install`)
 - rest of the awesomeness that I might not have remembered to document here
 
 ## Reinstall vim
