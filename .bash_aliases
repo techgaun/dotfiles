@@ -180,7 +180,8 @@ alias dlint="docker run --rm -i hadolint/hadolint"
 # kubernetes stuff
 alias k="kubectl"
 alias mkdash="minikube dashboard"
-alias kctx="k config get-contexts"
+alias kctx="kubectl config get-contexts"
+alias kctxu="kubectl config use-context"
 
 # terraform
 alias tf="terraform"
