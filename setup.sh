@@ -26,6 +26,8 @@ fi
 
 [[ -d "${SPACEVIM_DIR}" ]] || mkdir -p "${SPACEVIM_DIR}"
 
+[[ -d "${SPACEVIM_DIR}/autoload" ]] || mkdir -p "${SPACEVIM_DIR}/autoload"
+
 [[ -d "${NVIM_DIR}/autoload" ]] || curl -fLo "${NVIM_DIR}/autoload/plug.vim" --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -48,7 +50,9 @@ ln -sf "${SRC_DIR}/.iex.exs" "${HOME}/.iex.exs"
 ln -sf "${SRC_DIR}/.iftoprc" "${HOME}/.iftoprc"
 ln -sf "${SRC_DIR}/.mpd.conf" "${HOME}/.mpd.conf"
 # ln -sf "${SRC_DIR}/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
-ln -sf "${SRC_DIR}/nvim/init.vim" "${HOME}/.SpaceVim.d/init.vim"
+# ln -sf "${SRC_DIR}/nvim/init.vim" "${HOME}/.SpaceVim.d/init.vim"
+ln -sf "${SRC_DIR}/.SpaceVim.d/init.toml" "${HOME}/.SpaceVim.d/init.toml"
+ln -sf "${SRC_DIR}/.SpaceVim.d/autoload/myspacevim.vim" "${HOME}/.SpaceVim.d/autoload/myspacevim.vim"
 ln -sf "${SRC_DIR}/.psqlrc" "${HOME}/.psqlrc"
 ln -sf "${SRC_DIR}/.pgclirc" "${HOME}/.pgclirc"
 ln -sf "${SRC_DIR}/.pythonrc.py" "${HOME}/.pythonrc.py"
