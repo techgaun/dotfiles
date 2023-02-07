@@ -39,6 +39,9 @@
 [[layers]]
   name = "colorscheme"
 
+# [[layers]]
+#   name = "checkers"
+
 [[layers]]
   name = "cscope"
 
@@ -71,11 +74,26 @@
   [layers.override_cmd]
     rust = ["rust-analyzer"]
 
+  enabled_clients = ['vimls', 'clangd']
+
 [[layers]]
   name = "shell"
   default_position = "top"
   default_height = 30
   # enable = false
+
+[[layers]]
+  name = "lang#assembly"
+
+[[layers]]
+  name = "lang#c"
+
+[[layers]]
+  name = "lang#csharp"
+  highlight_types = 0
+
+[[layers]]
+  name = "lang#dockerfile"
 
 [[layers]]
   name = "lang#elixir"
@@ -108,7 +126,13 @@
   name = "lang#markdown"
 
 [[layers]]
+  name = "lang#pact"
+
+[[layers]]
   name = "lang#python"
+
+[[layers]]
+  name = "lang#sh"
 
 [[layers]]
   name = "lang#solidity"
@@ -124,6 +148,12 @@
 
 [[layers]]
   name = "lang#vim"
+
+[[layers]]
+  name = "lang#vue"
+
+[[layers]]
+  name = "lang#WebAssembly"
 
 # [[custom_plugins]]
 #   repo = "lilydjwg/colorizer"
