@@ -241,3 +241,9 @@ function! myspacevim#before() abort
 
   let g:prettier#autoformat_require_pragma = 0
 endfunction
+
+function! myspacevim#after() abort
+  call deoplete#custom#option('omni_patterns', {
+  \ 'go': '[^. *\t]\.\w*',
+  \})
+endfunction

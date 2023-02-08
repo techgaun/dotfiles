@@ -29,6 +29,7 @@
   project_rooter_outermost = false
 
   bootstrap_before = 'myspacevim#before'
+  bootstrap_after = 'myspacevim#after'
 
 # Enable autocomplete layer
 [[layers]]
