@@ -32,7 +32,7 @@ brew "wget"
 brew "zph/homebrew-cervezas/pdftk"
 cask "alfred"
 cask "dash"
-cask dbeaver-community
+cask "dbeaver-community"
 cask "dbkoda"
 cask "docker"
 cask "firefox"
