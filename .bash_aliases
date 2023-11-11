@@ -204,10 +204,6 @@ alias tmls="tmux lsk"   # list all tmux key bindings
 alias deadex="git ls-files lib | xargs ctags -f - | unused --stdin"
 alias deadcode="git ls-files | xargs ctags -f - | unused --stdin"
 
-if [[ -f "${HOME}/.bash_aliases_secret" ]]; then
-  source "${HOME}/.bash_aliases_secret"
-fi
-
 ag=$(command -v ag)
 [[ "$?" -eq 0 ]] && alias ag="ag --path-to-ignore ~/.agignore"
 
@@ -222,4 +218,8 @@ fi
 
 if type nvim &> /dev/null; then
   alias vim="node -v && MIX_ENV=test nvim"
+fi
+
+if [[ -f "${HOME}/.bash_aliases_secret" ]]; then
+  source "${HOME}/.bash_aliases_secret"
 fi
