@@ -41,7 +41,7 @@ fi
 # paths and other exports
 
 export ANDROID_HOME="${HOME}/Android/Sdk"
-export PATH="${HOME}/.bin:${HOME}/.asdf/installs/elixir/1.4.0/.mix/escripts:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}:${HOME}/tools/buck/bin"
+export PATH="${HOME}/.bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${PATH}:${HOME}/tools/buck/bin"
 export PATH="${HOME}/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:${PATH}"
 export PATH="${PATH}:${HOME}/android-studio/bin:${HOME}/.yarn/bin"
 export PATH="${PATH}:${HOME}/.local/share/gem/ruby/3.0.0/bin"
