@@ -1,6 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 brew "bash"
 brew "cmake"
 brew "coreutils"
