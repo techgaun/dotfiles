@@ -1,5 +1,6 @@
 unalias la 2> /dev/null
 
+alias ..="cd .."
 alias ..2="cd ../.."
 alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
@@ -9,7 +10,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias apingrok="ngrok http 4001"
 alias apty="sudo apt-get install -y"
 alias brc="source ~/.bashrc"
-alias ..="cd .."
 alias c="clear"
 alias chromegpu="/opt/google/chrome/chrome -use-gl=desktop --enable-features=VaapiVideoDecoder --disable-gpu-driver-bug-workarounds --disable-features=UseOzonePlatform --ignore-gpu-blocklist --enable-gpu-rasterization --enable-zero-copy --disable-features=UseSkiaRenderer"
 alias desk="cd ~/Desktop"
@@ -44,14 +44,15 @@ alias pyhttp2="python2 -m SimpleHTTPServer"
 alias pyhttp3="python3 -m http.server"
 alias runinflux="sudo influxd -config /etc/influxdb/influxdb.conf"
 alias s="saancho"
+alias sail="bash vendor/bin/sail"
 alias script="script -aq"
 alias src="apt source"
+alias sst="ss -tunapl"
 alias swatch="watch ss -stplu"
 alias sysup="sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove"
 alias turnoff="sudo poweroff"
 alias v="vim"
 alias ytmp3="youtube-dl -x --audio-format mp3 --audio-quality 0"
-alias sst="ss -tunapl"
 
 # this fixes issue with high CPU usage after laptop is woken up from sleep
 alias msrw19="sudo wrmsr -a 0x19a 0x0"
