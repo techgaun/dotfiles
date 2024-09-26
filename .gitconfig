@@ -1,7 +1,7 @@
 [user]
   name = techgaun
   email = coolsamar207@gmail.com
-  signingkey = 8BB8C93B2167505A
+  signingkey = 5034468E68643BF3
 
 [core]
   editor = nvim
