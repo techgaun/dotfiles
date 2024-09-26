@@ -6,5 +6,5 @@ TCPKeepAlive no
 ServerAliveInterval 60
 ServerAliveCountMax 10
 
-# anything prviate put on ~/.ssh/config.local
+# anything private put on ~/.ssh/config.local
 Include ~/.ssh/config.local
