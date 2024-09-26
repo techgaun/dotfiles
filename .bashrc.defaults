@@ -31,6 +31,8 @@ setup_g_completion() {
 if is_mac; then
   if [[ -f "${HOME}/.bash_completion.d/git-completion.bash" ]]; then
     setup_g_completion "${HOME}/.bash_completion.d/git-completion.bash"
+  elif [[ -f "$(brew --prefix)/etc/bash_completion.d/git-completion.bash" ]]; then
+    setup_g_completion "$(brew --prefix)/etc/bash_completion.d/git-completion.bash"
   else
     setup_g_completion "/usr/local/etc/bash_completion.d/git-completion.bash"
   fi
