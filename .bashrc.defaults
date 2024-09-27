@@ -83,6 +83,9 @@ export DISABLE_FILE_OPEN_ON_NAV=1
 # bat pager
 export BAT_PAGER="less -R --mouse"
 
+# gpg tty for commit issue
+export GPG_TTY=$(tty)
+
 # kubernetes
 complete -F __start_kubectl k
 
