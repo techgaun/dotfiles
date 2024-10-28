@@ -14,7 +14,7 @@
   b = branch
   c = clone --recursive --depth 50
   commend = commit --amend --no-edit --reset-author
-  feat = "!f() { git checkout -b feature/$1; }; f"
+  feat = "!f() { git checkout -b feat/$1; }; f"
   bug = "!f() { git checkout -b bugfix/$1; }; f"
   hfix = "!f() { git checkout -b hotfix/$1; }; f"
   cm = commit -m
