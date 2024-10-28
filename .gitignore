@@ -46,3 +46,6 @@ node_modules/
 tgcmd
 
 Brewfile.lock.json
+
+# cursor ide rules
+.cursorrules
