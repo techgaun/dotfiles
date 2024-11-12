@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "heroku/brew"
 brew "autoconf"
+brew "azure-cli"
 brew "bash"
 brew "bison"
 brew "cmake"
