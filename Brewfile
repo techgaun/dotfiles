@@ -4,6 +4,7 @@ brew "autoconf"
 brew "azure-cli"
 brew "bash"
 brew "bison"
+# https://github.com/ExistentialAudio/BlackHole - audio loopback driver
 brew "blackhole-16ch"
 brew "cmake"
 brew "coreutils"
