@@ -206,6 +206,7 @@ alias qnvim="MIX_ENV=test nvim -n -u NONE -i NONE -n"
 
 # tmux
 alias tmls="tmux lsk"   # list all tmux key bindings
+alias mux="tmuxinator"
 
 alias deadex="git ls-files lib | xargs ctags -f - | unused --stdin"
 alias deadcode="git ls-files | xargs ctags -f - | unused --stdin"
