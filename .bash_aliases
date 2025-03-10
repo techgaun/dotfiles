@@ -9,6 +9,7 @@ alias acmsniff="interceptty -s 'ispeed 115200 ospeed 115200' /dev/ttyACM0 /tmp/t
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias apingrok="ngrok http 4001"
 alias apty="sudo apt-get install -y"
+alias bbi="brew bundle install"
 alias brc="source ~/.bashrc"
 alias c="clear"
 alias chromegpu="/opt/google/chrome/chrome -use-gl=desktop --enable-features=VaapiVideoDecoder --disable-gpu-driver-bug-workarounds --disable-features=UseOzonePlatform --ignore-gpu-blocklist --enable-gpu-rasterization --enable-zero-copy --disable-features=UseSkiaRenderer"
