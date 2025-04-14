@@ -183,6 +183,7 @@ alias asdfg="asdf global"
 
 # docker stuff
 alias dlint="docker run --rm -i hadolint/hadolint"
+alias dcup="docker-compose up"
 
 # kubernetes stuff
 alias k="kubectl"
