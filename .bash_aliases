@@ -232,3 +232,7 @@ fi
 if [[ -f "${HOME}/.bash_aliases_secret" ]]; then
   source "${HOME}/.bash_aliases_secret"
 fi
+
+# browsers perf
+alias chrofast='open -a "Google Chrome" --args --disable-gpu-vsync --disable-frame-rate-limit'
+alias bravefast='open -a "Brave" --args --disable-gpu-vsync --disable-frame-rate-limit'
