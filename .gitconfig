@@ -22,8 +22,8 @@
   cp = checkout -
   cc = checkout -- .
   f = fetch
-  fit = !git add -A && git commit -m \"$(curl -s http://whatthecommit.com/index.txt)\"
-  fnit = !git add -A && git commit -n -m \"$(curl -s http://whatthecommit.com/index.txt)\"
+  fit = !git add -A && git commit -m \"$(curl -s https://whatthecommit.com/index.txt)\"
+  fnit = !git add -A && git commit -n -m \"$(curl -s https://whatthecommit.com/index.txt)\"
   fl = "!f() { git log --follow $1; }; f"
   it = !git init && git symbolic-ref HEAD refs/heads/main && git commit -m "root" --allow-empty
   l = log --decorate --pretty=oneline -n 20 --graph --abbrev-commit
