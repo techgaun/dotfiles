@@ -13,6 +13,7 @@ alias bbi="brew bundle install"
 alias brc="source ~/.bashrc"
 alias c="clear"
 alias chromegpu="/opt/google/chrome/chrome -use-gl=desktop --enable-features=VaapiVideoDecoder --disable-gpu-driver-bug-workarounds --disable-features=UseOzonePlatform --ignore-gpu-blocklist --enable-gpu-rasterization --enable-zero-copy --disable-features=UseSkiaRenderer"
+alias macchrome='open -a "Google Chrome" --args --disable-gpu-vsync --disable-frame-rate-limit'
 alias desk="cd ~/Desktop"
 alias devices="cat /proc/devices"
 alias dir="dir --color=auto"
