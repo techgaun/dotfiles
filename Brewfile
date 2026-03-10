@@ -72,9 +72,10 @@ cask "imhex"
 cask "iterm2"
 cask "keepassxc"
 cask "libreoffice"
-cask "microsoft-remote-desktop"
+cask "linearmouse"
+# cask "microsoft-remote-desktop" # have not used since a while
 cask "microsoft-teams"
-cask "mos"
+# cask "mos"   # going to try linearmouse instead
 cask "muzzle"
 cask "ngrok/ngrok/ngrok"
 cask "notion"

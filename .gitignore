@@ -49,3 +49,6 @@ Brewfile.lock.json
 
 # cursor ide rules
 .cursorrules
+
+# mise local tomls
+mise.toml
