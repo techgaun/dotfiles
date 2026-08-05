@@ -52,3 +52,5 @@ Brewfile.lock.json
 
 # mise local tomls
 mise.toml
+
+**/.claude/settings.local.json
