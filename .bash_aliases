@@ -237,3 +237,8 @@ fi
 # browsers perf
 alias chrofast='open -a "Google Chrome" --args --disable-gpu-vsync --disable-frame-rate-limit'
 alias bravefast='open -a "Brave" --args --disable-gpu-vsync --disable-frame-rate-limit'
+
+# claude
+alias claudep='CLAUDE_CONFIG_DIR=$HOME/.claude-personal command claude'
+alias claudew='CLAUDE_CONFIG_DIR=$HOME/.claude-work command claude'
+alias claude='echo "Use claudep and claudew instead"'
