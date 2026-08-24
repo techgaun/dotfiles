@@ -242,3 +242,8 @@ alias bravefast='open -a "Brave" --args --disable-gpu-vsync --disable-frame-rate
 alias claudep='CLAUDE_CONFIG_DIR=$HOME/.claude-personal command claude'
 alias claudew='CLAUDE_CONFIG_DIR=$HOME/.claude-work command claude'
 alias claude='echo "Use claudep and claudew instead"'
+
+# codex
+alias codexp='CODEX_HOME=$HOME/.codex-personal command codex'
+alias codexw='CODEX_HOME=$HOME/.codex-work command codex'
+alias codex='echo "Use codexp and codexw instead"'
