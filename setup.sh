@@ -6,10 +6,6 @@ SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 NVIM_DIR="${HOME}/.config/nvim"
 SPACEVIM_DIR="${HOME}/.SpaceVim.d"
 
-if [[ ! -d "${HOME}/.SpaceVim" || "x${FORCE_SPACEVIMINSTALL}" != "x" ]]; then
-  curl -sLf https://spacevim.org/install.sh | bash
-fi
-
 [[ ! -e "${HOME}/.httpie" ]] && mkdir "${HOME}/.httpie"
 
 [[ ! -e "${HOME}/.ssh" ]] && mkdir "${HOME}/.ssh"
