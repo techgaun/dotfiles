@@ -38,7 +38,18 @@ ln -sf "${SRC_DIR}/.bashrc.defaults" "${HOME}/.bashrc.defaults"
 ln -sf "${SRC_DIR}/curl-timing.txt" "${HOME}/.curl-timing.txt"
 ln -sf "${SRC_DIR}/.ctags" "${HOME}/.ctags"
 ln -sf "${SRC_DIR}/.gemrc" "${HOME}/.gemrc"
-ln -sf "${SRC_DIR}/.gitconfig" "${HOME}/.gitconfig"
+# ~/.gitconfig includes the repository copy instead of linking to it, so machine-specific
+# `git config --global` writes stay out of the repository.
+# The include comes first: settings written to ~/.gitconfig afterwards take precedence.
+if [[ -L "${HOME}/.gitconfig" ]] || ! grep -qF "path = ${SRC_DIR}/.gitconfig" "${HOME}/.gitconfig" 2>/dev/null; then
+  existing=$([[ -L "${HOME}/.gitconfig" ]] || cat "${HOME}/.gitconfig" 2>/dev/null)
+  rm -f "${HOME}/.gitconfig"
+  printf '[include]\n\tpath = %s\n%s\n' "${SRC_DIR}/.gitconfig" "${existing}" > "${HOME}/.gitconfig"
+fi
+# `git config --global` does not read includes, so a tool that finds no user.email in
+# ~/.gitconfig may set its own. Name the repository's identity there directly.
+git config --global user.name "$(git config -f "${SRC_DIR}/.gitconfig" user.name)"
+git config --global user.email "$(git config -f "${SRC_DIR}/.gitconfig" user.email)"
 ln -sf "${SRC_DIR}/.gitignore" "${HOME}/.gitignore"
 ln -sf "${SRC_DIR}/.globalrc" "${HOME}/.globalrc"
 ln -sf "${SRC_DIR}/httpie/config.json" "${HOME}/.httpie/config.json"
