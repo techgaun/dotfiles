@@ -66,6 +66,16 @@ if is_mac; then
   ln -sf "${SRC_DIR}/Brewfile" "${HOME}/Brewfile"
 fi
 
+# .gitconfig pages through delta. Brewfile installs it on a Mac; elsewhere use the release
+# binary in ~/.local/bin, which needs no root.
+if ! is_mac && ! command -v delta > /dev/null; then
+  delta_version=0.22.0
+  delta_build="delta-${delta_version}-$(uname -m)-unknown-linux-gnu"
+  mkdir -p "${HOME}/.local/bin"
+  curl -fsSL "https://github.com/dandavison/delta/releases/download/${delta_version}/${delta_build}.tar.gz" \
+    | tar -xz -C "${HOME}/.local/bin" --strip-components=1 "${delta_build}/delta"
+fi
+
 # update perms wherever necessary
 chmod 600 ~/.ssh/config
 
